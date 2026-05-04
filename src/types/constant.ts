@@ -11,6 +11,6 @@ export type ConstantConfig = Readonly< {
   value: number;
   relUncertainty: number;
   vector: DimensionVector;
-  quantity: string;
+  quantity?: string;
   unit: string;
 } >;
