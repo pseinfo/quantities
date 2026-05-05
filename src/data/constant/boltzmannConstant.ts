@@ -2,7 +2,7 @@ export default ( {
   id: 'boltzmannConstant',
   symbol: {
     plain: 'kB',
-    latex: 'k_{\\mathrm {B}}'
+    latex: 'k_{\\mathrm{B}}'
   },
   name: {
     en: 'Boltzmann constant',
