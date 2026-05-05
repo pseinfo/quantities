@@ -9,5 +9,5 @@ export default ( {
     de: 'Kehrwert der Quantelung des Leitwerts'
   },
   vector: [ -3, 2, 1, -2, 0, 0, 0 ],
-  value: 12906.40372
+  value: 1.290640372e4
 } ) as const;
