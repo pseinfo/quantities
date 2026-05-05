@@ -2,7 +2,7 @@ export default ( {
   id: 'reducedPlanckConstant',
   symbol: {
     plain: 'ℏ',
-    latex: '\hbar'
+    latex: '\\hbar'
   },
   name: {
     en: 'reduced Planck constant',

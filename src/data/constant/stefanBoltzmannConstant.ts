@@ -2,7 +2,7 @@ export default ( {
   id: 'stefanBoltzmannConstant',
   symbol: {
     plain: 'σ',
-    latex: '\sigma'
+    latex: '\\sigma'
   },
   name: {
     en: 'Stefan–Boltzmann constant',

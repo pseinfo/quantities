@@ -2,7 +2,7 @@ export default ( {
   id: 'cosmologicalConstant',
   symbol: {
     plain: 'Λ',
-    latex: '\Lambda'
+    latex: '\\Lambda'
   },
   name: {
     en: 'cosmological constant',

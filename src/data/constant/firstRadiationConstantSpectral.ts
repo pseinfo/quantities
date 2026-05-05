@@ -2,7 +2,7 @@ export default ( {
   id: 'firstRadiationConstantSpectral',
   symbol: {
     plain: 'c1L',
-    latex: 'c_{\mathrm {1L}}'
+    latex: 'c_{\\mathrm {1L}}'
   },
   name: {
     en: 'first radiation constant for spectral radiance',
