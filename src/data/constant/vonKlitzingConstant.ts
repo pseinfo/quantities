@@ -9,5 +9,5 @@ export default ( {
     de: 'Von-Klitzing-Konstante'
   },
   vector: [ -3, 2, 1, -2, 0, 0, 0 ],
-  value: 25812.80745
+  value: 2.581280745e4
 } ) as const;
