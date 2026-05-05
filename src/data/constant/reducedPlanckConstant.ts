@@ -5,7 +5,7 @@ export default ( {
     latex: '\\hbar'
   },
   name: {
-    en: 'reduced Planck constant',
+    en: 'Reduced Planck constant',
     de: 'Dirac-Konstante'
   },
   vector: [ -1, 2, 1, 0, 0, 0, 0 ],

@@ -5,7 +5,7 @@ export default ( {
     latex: 'c_{2}'
   },
   name: {
-    en: 'second radiation constant',
+    en: '2nd radiation constant',
     de: '2. Strahlungskonstante'
   },
   vector: [ 0, 1, 0, 0, 1, 0, 0 ],

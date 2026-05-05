@@ -5,7 +5,7 @@ export default ( {
     latex: 'c_{1}'
   },
   name: {
-    en: 'first radiation constant',
+    en: '1st radiation constant',
     de: '1. Strahlungskonstante'
   },
   vector: [ -3, 4, 1, 0, 0, 0, 0 ],

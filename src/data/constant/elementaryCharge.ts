@@ -5,7 +5,7 @@ export default ( {
     latex: 'e'
   },
   name: {
-    en: 'elementary charge',
+    en: 'Elementary charge',
     de: 'Elementarladung'
   },
   vector: [ 1, 0, 0, 1, 0, 0, 0 ],

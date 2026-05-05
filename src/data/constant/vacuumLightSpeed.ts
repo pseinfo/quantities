@@ -5,7 +5,7 @@ export default ( {
     latex: 'c'
   },
   name: {
-    en: 'speed of light in vacuum',
+    en: 'Speed of light in vacuum',
     de: 'Vakuumlichtgeschwindigkeit'
   },
   vector: [ -1, 1, 0, 0, 0, 0, 0 ],

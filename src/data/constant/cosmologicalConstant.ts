@@ -5,7 +5,7 @@ export default ( {
     latex: '\\Lambda'
   },
   name: {
-    en: 'cosmological constant',
+    en: 'Cosmological constant',
     de: 'Kosmologische Konstante'
   },
   vector: [ 0, -2, 0, 0, 0, 0, 0 ],

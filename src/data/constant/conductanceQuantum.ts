@@ -5,7 +5,7 @@ export default ( {
     latex: 'G_{0}'
   },
   name: {
-    en: 'conductance quantum',
+    en: 'Conductance quantum',
     de: 'Quantelung des Leitwerts'
   },
   vector: [ 3, -2, -1, 2, 0, 0, 0 ],
