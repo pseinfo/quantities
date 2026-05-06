@@ -10,6 +10,11 @@ export type Dimension = readonly [
 
 export type ConversionFn = ( v: number ) => number;
 
+export type Name = {
+  en?: string;
+  de?: string;
+};
+
 export type Unit< D extends Dimension = Dimension > = {
   key: string;
   dim: D;
@@ -17,8 +22,13 @@ export type Unit< D extends Dimension = Dimension > = {
   latex: string;
   toSI?: ConversionFn;
   fromSI?: ConversionFn;
-  name?: {
-    en?: string;
-    de?: string;
-  }
+  name?: Name;
+};
+
+export type Prefix = {
+  key: string;
+  symbol: string;
+  latex: string;
+  factor: ConversionFn;
+  name?: Name;
 };
