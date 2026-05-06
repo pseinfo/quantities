@@ -24,7 +24,7 @@ type UnitStructure = Array< {
 } >;
 
 export type LinearUnitConversion = {
-  scale: number;
+  factor: number;
 };
 
 export type AffineUnitConversion = {

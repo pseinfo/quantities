@@ -13,7 +13,7 @@ export default ( {
     exponent: 1
   } ],
   conversion: {
-    scale: 1
+    factor: 1
   },
   prefixable: true,
   meta: {

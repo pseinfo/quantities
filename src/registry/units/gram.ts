@@ -5,7 +5,7 @@ export default ( {
   dim: [ 0, 0, 1, 0, 0, 0, 0 ],
   structure: [],
   conversion: {
-    scale: 1
+    factor: 1
   },
   prefixable: true,
   meta: {
