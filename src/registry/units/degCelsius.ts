@@ -1,14 +1,10 @@
 import { UnitSystem } from '../../const';
 import type { Unit, UnitId } from '../../types';
-import kelvin from './kelvin';
 
 export default ( {
   id: 'degC' as UnitId,
   dim: [ 0, 0, 0, 0, 1, 0, 0 ],
-  structure: [ {
-    unit: kelvin,
-    exponent: 1
-  } ],
+  structure: [],
   conversion: {
     scale: 1,
     offset: 273.15

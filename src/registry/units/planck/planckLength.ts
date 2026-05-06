@@ -1,14 +1,10 @@
 import { UnitSystem } from '../../../const';
 import type { Unit, UnitId } from '../../../types';
-import meter from '../meter';
 
 export default ( {
   id: 'lP' as UnitId,
   dim: [ 0, 1, 0, 0, 0, 0, 0 ],
-  structure: [ {
-    unit: meter,
-    exponent: 1
-  } ],
+  structure: [],
   conversion: {
     factor: 1.61625518e-35
   },
