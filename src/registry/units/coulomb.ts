@@ -1,13 +1,15 @@
 import type { Unit, UnitId } from '../../types';
+import ampere from './ampere';
+import second from './second';
 
 export default ( {
   id: 'C' as UnitId,
   dim: [ 1, 0, 0, 1, 0, 0, 0 ],
   structure: [ {
-    unit: 'A' as UnitId,
+    unit: ampere,
     exponent: 1
   }, {
-    unit: 's' as UnitId,
+    unit: second,
     exponent: 1
   } ],
   conversion: {

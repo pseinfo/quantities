@@ -1,10 +1,11 @@
 import type { Unit, UnitId } from '../../types';
+import kelvin from './kelvin';
 
 export default ( {
   id: 'degF' as UnitId,
   dim: [ 0, 0, 0, 0, 1, 0, 0 ],
   structure: [ {
-    unit: 'K' as UnitId,
+    unit: kelvin,
     exponent: 1
   } ],
   conversion: {
