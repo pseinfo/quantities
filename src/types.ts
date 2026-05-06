@@ -8,8 +8,6 @@ export type Dimension = readonly [
   J: number  // luminous intensity
 ];
 
-export type ConversionFn = ( v: number ) => number;
-
 export type Meta = {
   symbol: string;
   latex: string;
@@ -19,21 +17,40 @@ export type Meta = {
   };
 };
 
+type UnitStructure = Array< {
+  unit: UnitId;
+  exponent: number;
+  prefix?: PrefixId;
+} >;
+
+export type LinearUnitConversion = {
+  scale: number;
+};
+
+export type AffineUnitConversion = {
+  scale: number;
+  offset: number;
+};
+
+export type UnitConversion =
+  | LinearUnitConversion
+  | AffineUnitConversion;
+
 export type UnitId = string & { __brand: 'unitId' };
 
 export type Unit< D extends Dimension = Dimension > = {
   id: UnitId;
   dim: D;
-  toSI?: ConversionFn;
-  fromSI?: ConversionFn;
+  structure: UnitStructure;
+  conversion: UnitConversion;
   meta: Meta;
 };
 
 export type PrefixId = string & { __brand: 'prefixId' };
 
 export type Prefix = {
-  id: string;
-  factor: ConversionFn;
+  id: PrefixId;
+  factor: number;
   meta: Meta;
 };
 
@@ -42,7 +59,6 @@ export type QuantityId = string & { __brand: 'quantityId' };
 export type Quantity< D extends Dimension = Dimension > = {
   id: QuantityId;
   dim: D;
-  units: UnitId[];
   meta: Meta;
 };
 
