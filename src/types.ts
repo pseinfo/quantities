@@ -1,9 +1,4 @@
-export enum System {
-  SI = 'SI',
-  CGS = 'CGS'
-}
-
-export type SIDimension = readonly [
+export type Dimension = readonly [
   T: number, // time
   L: number, // length
   M: number, // mass
@@ -13,13 +8,13 @@ export type SIDimension = readonly [
   J: number  // luminous intensity
 ];
 
-export type CGSDimension = readonly [
-  T: number, // time
-  L: number, // length
-  M: number, // mass
-];
+export type Unit< D extends Dimension = Dimension > = {
+  dim: D;
+  factor: number;
+};
 
-export type Dimension< S extends System > =
-  S extends System.SI ? SIDimension :
-  S extends System.CGS ? CGSDimension :
-  never;
+export type AffineUnit< D extends Dimension = Dimension > = {
+  dim: D;
+  scale: number;
+  offset: number;
+};
