@@ -1,3 +1,5 @@
+import type { UnitSystem } from './const';
+
 export type Dimension = readonly [
   T: number, // time
   L: number, // length
@@ -44,6 +46,7 @@ export type Unit< D extends Dimension = Dimension > = {
   structure: UnitStructure;
   conversion: UnitConversion;
   prefixable: boolean;
+  unitSystem: UnitSystem[];
   meta: Meta;
 };
 
