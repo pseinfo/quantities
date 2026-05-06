@@ -55,3 +55,10 @@ export type Constant = {
   uncertainty?: number;
   meta: Meta;
 };
+
+export type Registry = {
+  units: Map< UnitId, Unit >;
+  prefixes: Map< PrefixId, Prefix >;
+  quantities: Map< QuantityId, Quantity >;
+  constants: Map< ConstantId, Constant >;
+};
