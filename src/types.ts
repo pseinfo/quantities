@@ -15,8 +15,10 @@ export type Name = {
   de?: string;
 };
 
+export type UnitId = string & { __brand: 'unitId' };
+
 export type Unit< D extends Dimension = Dimension > = {
-  key: string;
+  key: UnitId;
   dim: D;
   symbol: string;
   latex: string;
@@ -30,5 +32,16 @@ export type Prefix = {
   symbol: string;
   latex: string;
   factor: ConversionFn;
+  name?: Name;
+};
+
+export type QuantityId = string & { __brand: 'quantityId' };
+
+export type Quantity< D extends Dimension = Dimension > = {
+  key: QuantityId;
+  dim: D;
+  units: UnitId[];
+  symbol: string;
+  latex: string;
   name?: Name;
 };
