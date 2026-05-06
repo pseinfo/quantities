@@ -18,7 +18,10 @@ export type Meta = {
 };
 
 type UnitStructure = Array< {
-  unit: 'self' | Unit;
+  unit: Unit;
+  exponent: number;
+  prefix?: PrefixId;
+} | {
   exponent: number;
   prefix?: PrefixId;
 } >;
