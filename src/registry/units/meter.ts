@@ -4,7 +4,7 @@ export default ( {
   id: 'm' as UnitId,
   dim: [ 0, 1, 0, 0, 0, 0, 0 ],
   structure: [ {
-    unit: 'm' as UnitId,
+    unit: 'self',
     exponent: 1
   } ],
   conversion: {

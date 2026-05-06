@@ -18,7 +18,7 @@ export type Meta = {
 };
 
 type UnitStructure = Array< {
-  unit: UnitId;
+  unit: 'self' | Unit;
   exponent: number;
   prefix?: PrefixId;
 } >;
