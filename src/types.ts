@@ -43,6 +43,7 @@ export type Unit< D extends Dimension = Dimension > = {
   dim: D;
   structure: UnitStructure;
   conversion: UnitConversion;
+  prefixable: boolean;
   meta: Meta;
 };
 

@@ -10,6 +10,7 @@ export default ( {
   conversion: {
     scale: 1
   },
+  prefixable: true,
   meta: {
     symbol: 'm',
     latex: '\\mathrm{m}',
