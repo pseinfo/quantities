@@ -3,11 +3,9 @@ import type { Unit, UnitId } from '../../types';
 export default ( {
   id: 'g' as UnitId,
   dim: [ 0, 0, 1, 0, 0, 0, 0 ],
-  structure: [ {
-    exponent: 1
-  } ],
+  structure: [],
   conversion: {
-    scale: 0.001
+    scale: 1
   },
   prefixable: true,
   meta: {

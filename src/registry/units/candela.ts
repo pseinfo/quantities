@@ -3,9 +3,7 @@ import type { Unit, UnitId } from '../../types';
 export default ( {
   id: 'cd' as UnitId,
   dim: [ 0, 0, 0, 0, 0, 0, 1 ],
-  structure: [ {
-    exponent: 1
-  } ],
+  structure: [],
   conversion: {
     scale: 1
   },

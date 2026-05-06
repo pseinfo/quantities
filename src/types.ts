@@ -21,9 +21,6 @@ type UnitStructure = Array< {
   unit: Unit;
   exponent: number;
   prefix?: PrefixId;
-} | {
-  exponent: number;
-  prefix?: PrefixId;
 } >;
 
 export type LinearUnitConversion = {
