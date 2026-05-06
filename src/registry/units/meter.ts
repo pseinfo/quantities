@@ -15,7 +15,7 @@ export default ( {
     symbol: 'm',
     latex: '\\mathrm{m}',
     name: {
-      en: 'meter',
+      en: 'Meter',
       de: 'Meter'
     }
   }

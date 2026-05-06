@@ -15,7 +15,7 @@ export default ( {
     symbol: 's',
     latex: '\\mathrm{s}',
     name: {
-      en: 'second',
+      en: 'Second',
       de: 'Sekunde'
     }
   }

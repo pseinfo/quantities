@@ -15,7 +15,7 @@ export default ( {
     symbol: 'g',
     latex: '\\mathrm{g}',
     name: {
-      en: 'gram',
+      en: 'Gram',
       de: 'Gramm'
     }
   }
