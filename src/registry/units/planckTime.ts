@@ -1,5 +1,5 @@
-import { UnitSystem } from '../../../const';
-import type { Unit, UnitId } from '../../../types';
+import { UnitSystem } from '../../const';
+import type { Unit, UnitId } from '../../types';
 
 export default ( {
   id: 'tP' as UnitId,
