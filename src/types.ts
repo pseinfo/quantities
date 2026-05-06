@@ -8,13 +8,17 @@ export type Dimension = readonly [
   J: number  // luminous intensity
 ];
 
-export type Unit< D extends Dimension = Dimension > = {
-  dim: D;
-  factor: number;
-};
+export type ConversionFn = ( v: number ) => number;
 
-export type AffineUnit< D extends Dimension = Dimension > = {
+export type Unit< D extends Dimension = Dimension > = {
+  key: string;
   dim: D;
-  scale: number;
-  offset: number;
+  symbol: string;
+  latex: string;
+  toSI?: ConversionFn;
+  fromSI?: ConversionFn;
+  name?: {
+    en?: string;
+    de?: string;
+  }
 };
