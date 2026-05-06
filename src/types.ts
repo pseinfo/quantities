@@ -10,38 +10,48 @@ export type Dimension = readonly [
 
 export type ConversionFn = ( v: number ) => number;
 
-export type Name = {
-  en?: string;
-  de?: string;
+export type Meta = {
+  symbol: string;
+  latex: string;
+  name?: {
+    en?: string;
+    de?: string;
+  };
 };
 
 export type UnitId = string & { __brand: 'unitId' };
 
 export type Unit< D extends Dimension = Dimension > = {
-  key: UnitId;
+  id: UnitId;
   dim: D;
-  symbol: string;
-  latex: string;
   toSI?: ConversionFn;
   fromSI?: ConversionFn;
-  name?: Name;
+  meta: Meta;
 };
 
+export type PrefixId = string & { __brand: 'prefixId' };
+
 export type Prefix = {
-  key: string;
-  symbol: string;
-  latex: string;
+  id: string;
   factor: ConversionFn;
-  name?: Name;
+  meta: Meta;
 };
 
 export type QuantityId = string & { __brand: 'quantityId' };
 
 export type Quantity< D extends Dimension = Dimension > = {
-  key: QuantityId;
+  id: QuantityId;
   dim: D;
   units: UnitId[];
-  symbol: string;
-  latex: string;
-  name?: Name;
+  meta: Meta;
+};
+
+export type ConstantId = string & { __brand: 'constantId' };
+
+export type Constant = {
+  id: ConstantId;
+  value: number;
+  unit: UnitId;
+  uncertainty?: number;
+  meta: Meta;
 };
