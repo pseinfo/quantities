@@ -1,5 +1,6 @@
 export enum UnitSystem {
   SI = 'si',
+  COMMON = 'common',
   IMPERIAL = 'imperial',
   USC = 'usc',
   CGS = 'cgs',
