@@ -1,3 +1,4 @@
+import { UnitSystem } from '../../const';
 import type { Unit, UnitId } from '../../types';
 
 export default ( {
@@ -8,6 +9,9 @@ export default ( {
     factor: 1
   },
   prefixable: true,
+  unitSystem: [
+    UnitSystem.SI
+  ],
   meta: {
     symbol: 'm',
     latex: '\\mathrm{m}',

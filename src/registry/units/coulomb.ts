@@ -1,3 +1,4 @@
+import { UnitSystem } from '../../const';
 import type { Unit, UnitId } from '../../types';
 import ampere from './ampere';
 import second from './second';
@@ -16,6 +17,9 @@ export default ( {
     factor: 1
   },
   prefixable: true,
+  unitSystem: [
+    UnitSystem.SI
+  ],
   meta: {
     symbol: 'C',
     latex: '\\mathrm{C}',

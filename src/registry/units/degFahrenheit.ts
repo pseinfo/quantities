@@ -1,3 +1,4 @@
+import { UnitSystem } from '../../const';
 import type { Unit, UnitId } from '../../types';
 import kelvin from './kelvin';
 
@@ -13,6 +14,9 @@ export default ( {
     offset: 255.372222
   },
   prefixable: false,
+  unitSystem: [
+    UnitSystem.USC
+  ],
   meta: {
     symbol: '°F',
     latex: '\\mathrm{^{\\circ}F}',

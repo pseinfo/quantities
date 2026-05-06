@@ -1,3 +1,4 @@
+import { UnitSystem } from '../../const';
 import type { Unit, UnitId } from '../../types';
 import meter from './meter';
 
@@ -12,6 +13,10 @@ export default ( {
     factor: 0.0254
   },
   prefixable: false,
+  unitSystem: [
+    UnitSystem.IMPERIAL,
+    UnitSystem.USC
+  ],
   meta: {
     symbol: 'in',
     latex: '\\mathrm{in}',
