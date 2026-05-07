@@ -17,6 +17,7 @@ export default ( {
     symbol: {
       default: {
         ascii: 'tP',
+        unicode: 'tₚ',
         latex: 't_{\\mathrm{P}}'
       }
     },

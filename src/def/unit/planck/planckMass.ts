@@ -17,6 +17,7 @@ export default ( {
     symbol: {
       default: {
         ascii: 'mP',
+        unicode: 'mₚ',
         latex: 'm_{\\mathrm{P}}'
       }
     },

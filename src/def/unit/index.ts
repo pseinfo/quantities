@@ -9,6 +9,7 @@ import { kelvin } from './base/kelvin';
 import { meter } from './base/meter';
 import { second } from './base/second';
 
+import { biot } from './cgs/biot';
 import { statampere } from './cgs/statampere';
 
 import { degC } from './common/temperature/degCelsius';
@@ -20,6 +21,7 @@ import { hour } from './common/time/hour';
 import { min } from './common/time/minute';
 import { year } from './common/time/year';
 
+import { planckCurrent } from './planck/planckCurrent';
 import { planckLength } from './planck/planckLength';
 import { planckMass } from './planck/planckMass';
 import { planckTemp } from './planck/planckTemp';
@@ -32,13 +34,13 @@ export default ( [
   // Imperial units
   // USC units
   // CGS units
-  statampere,
+  biot, statampere,
   // Gaussian units
   // Natural units
   // Atomic units
   atomicMass, bohrRadius,
   // Planck units
-  planckLength, planckMass, planckTemp, planckTime,
+  planckCurrent, planckLength, planckMass, planckTemp, planckTime,
   // Astronomical units
   // Common units
   degC, degF, degR,
