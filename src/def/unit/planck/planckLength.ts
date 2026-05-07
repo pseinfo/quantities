@@ -1,7 +1,7 @@
-import type { LengthDim, TimeDim } from '../../../types/dimension';
-import type { UnitDef, UnitId } from '../../../types/unit';
+import type { LengthDim } from '../../../types/dimension';
+import type { UnitDef, UnitRef } from '../../../types/unit';
 
-export const lP = 'lP' as UnitId< 'lP' >;
+export const lP = 'lP' as UnitRef< LengthDim, 'lP' >;
 
 export default ( {
   id: lP,

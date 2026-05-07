@@ -1,7 +1,7 @@
 import type { LengthDim } from '../../../types/dimension';
-import type { UnitDef, UnitId } from '../../../types/unit';
+import type { UnitDef, UnitRef } from '../../../types/unit';
 
-export const m = 'm' as UnitId< 'm' >;
+export const m = 'm' as UnitRef< LengthDim, 'm' >;
 
 export default ( {
   id: m,

@@ -1,7 +1,7 @@
 import type { TimeDim } from '../../../../types/dimension';
-import type { UnitDef, UnitId } from '../../../../types/unit';
+import type { UnitDef, UnitRef } from '../../../../types/unit';
 
-export const min = 'min' as UnitId< 'min' >;
+export const min = 'min' as UnitRef< TimeDim, 'min' >;
 
 export default ( {
   id: min,

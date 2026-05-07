@@ -1,14 +1,27 @@
 import type { Deprecated, Meta, UnitSystem } from './common';
 import type { Dimension } from './dimension';
 
-export type UnitId< ID extends string = string > = ID & { readonly __brand: 'unitId' };
+export type UnitRef<
+  D extends Dimension = Dimension,
+  ID extends string = string
+> = ID & {
+  readonly __brand: 'unitRef',
+  readonly __dim: D;
+};
 
 export type UnitCategory =
-  | 'base' | 'derived' | 'coherent' | 'accepted' | 'non_si' 
-  | 'historical' | 'obsolete' | 'dimensionless' | 'logarithmic';
+  | 'base'
+  | 'derived'
+  | 'coherent'
+  | 'accepted'
+  | 'non_si' 
+  | 'historical'
+  | 'obsolete'
+  | 'dimensionless'
+  | 'logarithmic';
 
 export type UnitStruct = Array< {
-  unit: UnitDef;
+  unit: UnitRef;
   exp: number;
   prefix?: any;
 } >;
@@ -20,9 +33,9 @@ export type UnitConv =
 
 export type UnitDef<
   D extends Dimension = Dimension,
-  ID extends UnitId = UnitId
+  R extends UnitRef = UnitRef
 > = {
-  id: ID;
+  id: R;
   dim: D;
   structure: UnitStruct;
   conversion: UnitConv;
@@ -30,6 +43,6 @@ export type UnitDef<
   unitSystem: UnitSystem[];
   category?: UnitCategory[];
   aliases?: string[];
-  deprecated?: Deprecated< UnitDef< D > >;
+  deprecated?: Deprecated< UnitRef< D > >;
   meta: Meta;
 };

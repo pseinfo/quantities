@@ -1,7 +1,7 @@
 import type { MassDim } from '../../../types/dimension';
-import type { UnitDef, UnitId } from '../../../types/unit';
+import type { UnitDef, UnitRef } from '../../../types/unit';
 
-export const g = 'g' as UnitId< 'g' >;
+export const g = 'g' as UnitRef< MassDim, 'g' >;
 
 export default ( {
   id: g,

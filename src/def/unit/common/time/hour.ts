@@ -1,7 +1,7 @@
 import type { TimeDim } from '../../../../types/dimension';
-import type { UnitDef, UnitId } from '../../../../types/unit';
+import type { UnitDef, UnitRef } from '../../../../types/unit';
 
-export const hour = 'hour' as UnitId< 'hour' >;
+export const hour = 'hour' as UnitRef< TimeDim, 'hour' >;
 
 export default ( {
   id: hour,

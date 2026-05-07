@@ -1,8 +1,18 @@
-export type Lang = 'en' | 'de';
+export type Lang =
+  | 'en'
+  | 'de';
 
 export type UnitSystem =
-  | 'si' | 'common' | 'imperial' | 'usc' | 'cgs' | 'gaussian'
-  | 'natural' | 'atomic' | 'planck' | 'astronomical';
+  | 'si'
+  | 'imperial'
+  | 'usc'
+  | 'cgs'
+  | 'gaussian'
+  | 'natural'
+  | 'atomic'
+  | 'planck'
+  | 'astronomical'
+  | 'common';
 
 export type Symbol = {
   ascii: string;
@@ -15,12 +25,6 @@ export type Name = readonly [
   PLURAL?: string
 ];
 
-export type Deprecated< T = unknown > = {
-  since?: string;
-  reason?: string;
-  replacement?: T;
-};
-
 export type Meta = {
   symbol: {
     default: Symbol;
@@ -28,4 +32,10 @@ export type Meta = {
   };
   name?: { [ L in Lang ]?: Name };
   description?: { [ L in Lang ]?: string };
+};
+
+export type Deprecated< R = unknown > = {
+  replacement?: R;
+  since?: string;
+  reason?: string;
 };
