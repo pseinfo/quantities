@@ -1,10 +1,10 @@
 import type { TimeDim } from '../../../../types/dimension';
 import type { UnitDef, UnitId } from '../../../../types/unit';
 
-export type hour = UnitDef< TimeDim, 'hour' >;
+export const hour = 'hour' as UnitId< 'hour' >;
 
 export default ( {
-  id: 'hour' as UnitId< 'hour' >,
+  id: hour,
   dim: [ 1, 0, 0, 0, 0, 0, 0 ],
   structure: [],
   conversion: {
@@ -30,4 +30,4 @@ export default ( {
       de: 'akzeptierte Zeiteinheit, gleich 3600 Sekunden'
     }
   }
-} ) as const satisfies hour;
+} ) as const satisfies UnitDef< TimeDim, 'hour' >;

@@ -1,10 +1,10 @@
 import type { TimeDim } from '../../../../types/dimension';
 import type { UnitDef, UnitId } from '../../../../types/unit';
 
-export type year = UnitDef< TimeDim, 'year' >;
+export const year = 'year' as UnitId< 'year' >;
 
 export default ( {
-  id: 'year' as UnitId< 'year' >,
+  id: year,
   dim: [ 1, 0, 0, 0, 0, 0, 0 ],
   structure: [],
   conversion: {
@@ -30,4 +30,4 @@ export default ( {
       de: 'akzeptierte Zeiteinheit, gleich 31557600 Sekunden'
     }
   }
-} ) as const satisfies year;
+} ) as const satisfies UnitDef< TimeDim, 'year' >;

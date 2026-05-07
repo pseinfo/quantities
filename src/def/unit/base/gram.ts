@@ -1,10 +1,10 @@
 import type { MassDim } from '../../../types/dimension';
 import type { UnitDef, UnitId } from '../../../types/unit';
 
-export type g = UnitDef< MassDim, 'g' >;
+export const g = 'g' as UnitId< 'g' >;
 
 export default ( {
-  id: 'g' as UnitId< 'g' >,
+  id: g,
   dim: [ 0, 0, 1, 0, 0, 0, 0 ],
   structure: [],
   conversion: 1,
@@ -28,4 +28,4 @@ export default ( {
       de: 'SI-Basiseinheit der Masse'
     }
   }
-} ) as const satisfies g;
+} ) as const satisfies UnitDef< MassDim, 'g' >;

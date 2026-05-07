@@ -1,10 +1,10 @@
 import type { TimeDim } from '../../../../types/dimension';
 import type { UnitDef, UnitId } from '../../../../types/unit';
 
-export type min = UnitDef< TimeDim, 'min' >;
+export const min = 'min' as UnitId< 'min' >;
 
 export default ( {
-  id: 'min' as UnitId< 'min' >,
+  id: min,
   dim: [ 1, 0, 0, 0, 0, 0, 0 ],
   structure: [],
   conversion: {
@@ -30,4 +30,4 @@ export default ( {
       de: 'akzeptierte Zeiteinheit, gleich 60 Sekunden'
     }
   }
-} ) as const satisfies min;
+} ) as const satisfies UnitDef< TimeDim, 'min' >;

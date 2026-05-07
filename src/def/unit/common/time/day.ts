@@ -1,10 +1,10 @@
 import type { TimeDim } from '../../../../types/dimension';
 import type { UnitDef, UnitId } from '../../../../types/unit';
 
-export type day = UnitDef< TimeDim, 'day' >;
+export const day = 'day' as UnitId< 'day' >;
 
 export default ( {
-  id: 'day' as UnitId< 'day' >,
+  id: day,
   dim: [ 1, 0, 0, 0, 0, 0, 0 ],
   structure: [],
   conversion: {
@@ -30,4 +30,4 @@ export default ( {
       de: 'akzeptierte Zeiteinheit, gleich 86400 Sekunden'
     }
   }
-} ) as const satisfies day;
+} ) as const satisfies UnitDef< TimeDim, 'day' >;

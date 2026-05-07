@@ -1,10 +1,10 @@
 import type { LengthDim } from '../../../types/dimension';
 import type { UnitDef, UnitId } from '../../../types/unit';
 
-export type m = UnitDef< LengthDim, 'm' >;
+export const m = 'm' as UnitId< 'm' >;
 
 export default ( {
-  id: 'm' as UnitId< 'm' >,
+  id: m,
   dim: [ 0, 1, 0, 0, 0, 0, 0 ],
   structure: [],
   conversion: 1,
@@ -28,4 +28,4 @@ export default ( {
       de: 'SI-Basiseinheit der Länge'
     }
   }
-} ) as const satisfies m;
+} ) as const satisfies UnitDef< LengthDim, 'm' >;
