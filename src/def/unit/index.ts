@@ -3,6 +3,7 @@ import type { UnitRegistry } from '../../types/registry';
 import { atomicMass } from './atomic/atomicMass';
 import { bohrRadius } from './atomic/bohrRadius';
 
+import { ampere } from './base/ampere';
 import { gram } from './base/gram';
 import { kelvin } from './base/kelvin';
 import { meter } from './base/meter';
@@ -24,7 +25,7 @@ import { planckTime } from './planck/planckTime';
 
 export default ( [
   // SI base units
-  gram, kelvin, meter, second,
+  ampere, gram, kelvin, meter, second,
   // SI derived units
   // Imperial units
   // USC units
@@ -37,5 +38,6 @@ export default ( [
   planckLength, planckMass, planckTemp, planckTime,
   // Astronomical units
   // Common units
-  degC, degF, degR, day, hour, min, year
+  degC, degF, degR,
+  day, hour, min, year
 ] ) as const satisfies UnitRegistry;
