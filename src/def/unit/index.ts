@@ -22,7 +22,7 @@ import { planckMass } from './planck/planckMass';
 import { planckTemp } from './planck/planckTemp';
 import { planckTime } from './planck/planckTime';
 
-export default new Set( [
+export default ( [
   // SI base units
   gram, kelvin, meter, second,
   // SI derived units
@@ -38,4 +38,4 @@ export default new Set( [
   // Astronomical units
   // Common units
   degC, degF, degR, day, hour, min, year
-] ) satisfies UnitRegistry;
+] ) as const satisfies UnitRegistry;

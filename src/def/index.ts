@@ -1,6 +1,6 @@
 import type { Registry } from '../types/registry';
-import units from './unit';
+import unitRegistry from './unit';
 
 export default ( {
-  unit: units
+  unit: unitRegistry
 } ) as const satisfies Registry;

@@ -1,6 +1,6 @@
 import type { UnitRef } from './unit';
 
-export type UnitRegistry = Set< UnitRef >;
+export type UnitRegistry = readonly UnitRef[];
 
 export type Registry = {
   unit: UnitRegistry;
