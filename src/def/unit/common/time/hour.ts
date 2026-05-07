@@ -17,8 +17,8 @@ export default ( {
   meta: {
     symbol: {
       default: {
-        ascii: 'hr',
-        latex: '\\mathrm{hr}'
+        ascii: 'h',
+        latex: '\\mathrm{h}'
       }
     },
     name: {
