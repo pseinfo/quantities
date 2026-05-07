@@ -12,7 +12,7 @@ export default ( {
     uncertainty: 1.1e-5
   },
   prefixable: false,
-  unitSystem: [ 'planck' ],
+  unitSystem: [ 'planck', 'natural' ],
   aliases: [ 'planck temperature' ],
   meta: {
     symbol: {

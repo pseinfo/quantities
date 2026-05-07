@@ -11,7 +11,7 @@ export default ( {
     factor: 2.17643424e-5
   },
   prefixable: false,
-  unitSystem: [ 'planck' ],
+  unitSystem: [ 'planck', 'natural' ],
   aliases: [ 'planck mass' ],
   meta: {
     symbol: {
