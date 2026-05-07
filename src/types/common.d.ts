@@ -13,3 +13,21 @@ export type Dimension = readonly [
   N: number, // amount
   J: number  // luminous intensity
 ];
+
+export type Symbol = {
+  plain: string;
+  latex: string;
+};
+
+export type Name = [
+  SINGULAR: string,
+  PLURAL?: string
+];
+
+export type Meta = {
+  symbol: {
+    common: Symbol;
+    locale?: { [ L in Lang ]?: Symbol };
+  };
+  name?: { [ L in Lang ]?: Name };
+};
