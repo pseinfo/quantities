@@ -27,8 +27,8 @@ export type UnitStruct = Array< {
 } >;
 
 export type UnitConv =
-  | { factor: number }
-  | { scale: number, offset: number }
+  | { factor: number, uncertainty?: number }
+  | { scale: number, offset: number, uncertainty?: number }
   | 1;
 
 export type UnitDef<

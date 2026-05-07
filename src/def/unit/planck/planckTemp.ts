@@ -8,7 +8,8 @@ export default ( {
   dim: [ 0, 0, 0, 0, 1, 0, 0 ],
   structure: [],
   conversion: {
-    factor: 1.41678416e32
+    factor: 1.41678416e32,
+    uncertainty: 1.1e-5
   },
   prefixable: false,
   unitSystem: [ 'planck' ],
