@@ -9,6 +9,8 @@ import { kelvin } from './base/kelvin';
 import { meter } from './base/meter';
 import { second } from './base/second';
 
+import { statampere } from './cgs/statampere';
+
 import { degC } from './common/temperature/degCelsius';
 import { degF } from './common/temperature/degFahrenheit';
 import { degR } from './common/temperature/degRankine';
@@ -30,6 +32,7 @@ export default ( [
   // Imperial units
   // USC units
   // CGS units
+  statampere,
   // Gaussian units
   // Natural units
   // Atomic units
