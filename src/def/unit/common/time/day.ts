@@ -26,8 +26,8 @@ export default ( {
       de: [ 'Tag', 'Tage' ]
     },
     description: {
-      en: 'accepted unit of time, equal to 86400 seconds',
-      de: 'akzeptierte Zeiteinheit, gleich 86400 Sekunden'
+      en: 'accepted unit of time; equal to 86400 seconds',
+      de: 'akzeptierte Zeiteinheit; gleich 86400 Sekunden'
     }
   }
 } ) as const satisfies UnitDef< TimeDim, typeof day >;

@@ -26,8 +26,8 @@ export default ( {
       de: [ 'Minute', 'Minuten' ]
     },
     description: {
-      en: 'accepted unit of time, equal to 60 seconds',
-      de: 'akzeptierte Zeiteinheit, gleich 60 Sekunden'
+      en: 'accepted unit of time; equal to 60 seconds',
+      de: 'akzeptierte Zeiteinheit; gleich 60 Sekunden'
     }
   }
 } ) as const satisfies UnitDef< TimeDim, typeof min >;

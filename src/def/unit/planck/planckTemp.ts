@@ -26,8 +26,8 @@ export default ( {
       de: [ 'Planck-Temperatur' ]
     },
     description: {
-      en: 'Smallest meaningful unit of temperature, Planck units.',
-      de: 'Kleinste sinnvolle Temperatureinheit, Planck-Einheiten.'
+      en: 'Smallest meaningful unit of temperature; Planck units',
+      de: 'Kleinste sinnvolle Temperatureinheit; Planck-Einheiten'
     }
   }
 } ) as const satisfies UnitDef< TemperatureDim, typeof planckTemp >;

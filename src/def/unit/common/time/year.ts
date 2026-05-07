@@ -26,8 +26,8 @@ export default ( {
       de: [ 'Jahr', 'Jahre' ]
     },
     description: {
-      en: 'accepted unit of time, equal to 31557600 seconds',
-      de: 'akzeptierte Zeiteinheit, gleich 31557600 Sekunden'
+      en: 'accepted unit of time; equal to 31557600 seconds',
+      de: 'akzeptierte Zeiteinheit; gleich 31557600 Sekunden'
     }
   }
 } ) as const satisfies UnitDef< TimeDim, typeof year >;

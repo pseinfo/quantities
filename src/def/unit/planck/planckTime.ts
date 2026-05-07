@@ -25,8 +25,8 @@ export default ( {
       de: [ 'Planck-Zeit' ]
     },
     description: {
-      en: 'Smallest meaningful unit of time, Planck units.',
-      de: 'Kleinste sinnvolle Zeiteinheit, Planck-Einheiten.'
+      en: 'Smallest meaningful unit of time; Planck units',
+      de: 'Kleinste sinnvolle Zeiteinheit; Planck-Einheiten'
     }
   }
 } ) as const satisfies UnitDef< TimeDim, typeof planckTime >;

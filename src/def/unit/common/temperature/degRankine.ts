@@ -27,8 +27,8 @@ export default ( {
       de: [ 'Grad Rankine' ]
     },
     description: {
-      en: 'unit of temperature, defined as 1/180 of the difference between the freezing and boiling points of water at standard atmospheric pressure, with the freezing point of water at 491.67 °R and the boiling point at 671.67 °R',
-      de: 'Temperatureinheit, definiert als 1/180 der Differenz zwischen dem Gefrier- und Siedepunkt von Wasser bei Normaldruck, wobei der Gefrierpunkt von Wasser bei 491,67 °R und der Siedepunkt bei 671,67 °R liegt'
+      en: 'unit of temperature; defined as 1/180 of the difference between the freezing and boiling points of water at standard atmospheric pressure, with the freezing point of water at 491.67 °R and the boiling point at 671.67 °R',
+      de: 'Temperatureinheit; definiert als 1/180 der Differenz zwischen dem Gefrier- und Siedepunkt von Wasser bei Normaldruck, wobei der Gefrierpunkt von Wasser bei 491,67 °R und der Siedepunkt bei 671,67 °R liegt'
     }
   }
 } ) as const satisfies UnitDef< TemperatureDim, typeof degR >;

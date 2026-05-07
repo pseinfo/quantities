@@ -28,8 +28,8 @@ export default ( {
       de: [ 'Grad Fahrenheit' ]
     },
     description: {
-      en: 'unit of temperature, defined as 1/180 of the difference between the freezing and boiling points of water at standard atmospheric pressure, with the freezing point of water at 32 °F and the boiling point at 212 °F',
-      de: 'Temperatureinheit, definiert als 1/180 der Differenz zwischen dem Gefrier- und Siedepunkt von Wasser bei Normaldruck, wobei der Gefrierpunkt von Wasser bei 32 °F und der Siedepunkt bei 212 °F liegt'
+      en: 'unit of temperature; defined as 1/180 of the difference between the freezing and boiling points of water at standard atmospheric pressure, with the freezing point of water at 32 °F and the boiling point at 212 °F',
+      de: 'Temperatureinheit; definiert als 1/180 der Differenz zwischen dem Gefrier- und Siedepunkt von Wasser bei Normaldruck, wobei der Gefrierpunkt von Wasser bei 32 °F und der Siedepunkt bei 212 °F liegt'
     }
   }
 } ) as const satisfies UnitDef< TemperatureDim, typeof degF >;

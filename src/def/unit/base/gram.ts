@@ -24,8 +24,8 @@ export default ( {
       de: [ 'Gramm' ]
     },
     description: {
-      en: 'SI base unit of mass',
-      de: 'SI-Basiseinheit der Masse'
+      en: 'SI base unit of mass, declared as gram for mathematical convenience',
+      de: 'SI-Basiseinheit der Masse, aus mathematischen Gründen als Gramm deklariert'
     }
   }
 } ) as const satisfies UnitDef< MassDim, typeof gram >;

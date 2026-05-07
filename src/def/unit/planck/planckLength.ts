@@ -25,8 +25,8 @@ export default ( {
       de: [ 'Planck-Länge' ]
     },
     description: {
-      en: 'Smallest meaningful unit of lenght, Planck units.',
-      de: 'Kleinste sinnvolle Längeneinheit, Planck-Einheiten.'
+      en: 'Smallest meaningful unit of lenght; Planck units',
+      de: 'Kleinste sinnvolle Längeneinheit; Planck-Einheiten'
     }
   }
 } ) as const satisfies UnitDef< LengthDim, typeof planckLength >;

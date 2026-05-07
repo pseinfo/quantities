@@ -26,8 +26,8 @@ export default ( {
       de: [ 'Stunde', 'Stunden' ]
     },
     description: {
-      en: 'accepted unit of time, equal to 3600 seconds',
-      de: 'akzeptierte Zeiteinheit, gleich 3600 Sekunden'
+      en: 'accepted unit of time; equal to 3600 seconds',
+      de: 'akzeptierte Zeiteinheit; gleich 3600 Sekunden'
     }
   }
 } ) as const satisfies UnitDef< TimeDim, typeof hour >;
