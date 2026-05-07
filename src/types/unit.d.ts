@@ -9,11 +9,11 @@ export type UnitStruct = Array< {
 } >;
 
 export type UnitConv =
-  | { factor: number; }
-  | { scale: number; offset: number }
+  | { factor: number }
+  | { scale: number, offset: number }
   | 1;
 
-export type UnitDef< ID extends string = string, D extends Dimension = Dimension > = {
+export type UnitDef< D extends Dimension = Dimension, ID extends string = string > = {
   id: UnitId< ID >;
   dim: D;
   structure: UnitStruct;
@@ -21,5 +21,5 @@ export type UnitDef< ID extends string = string, D extends Dimension = Dimension
   prefixable: boolean;
   unitSystem: UnitSystem[];
   aliases?: string[];
-  meta: Meta;
+  meta: Meta< UnitDef< D > >;
 };

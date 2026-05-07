@@ -1,8 +1,12 @@
 export type Lang = 'en' | 'de';
 
 export type UnitSystem =
-  | 'si' | 'common' | 'imperial' | 'usc' | 'cgs'
-  | 'gauss' | 'planck' | 'atomic' | 'astro';
+  | 'si' | 'common' | 'imperial' | 'usc' | 'cgs' | 'gaussian'
+  | 'natural' | 'atomic' | 'planck' | 'astronomical';
+
+export type UnitCategory =
+  | 'base' | 'derived' | 'coherent' | 'accepted' | 'non_si' 
+  | 'historical' | 'obsolete' | 'dimensionless' | 'logarithmic';
 
 export type Dimension = readonly [
   T: number, // time
@@ -15,19 +19,29 @@ export type Dimension = readonly [
 ];
 
 export type Symbol = {
-  plain: string;
-  latex: string;
+  ascii: string;
+  unicode?: string;
+  latex?: string;
 };
 
-export type Name = [
+export type Name = readonly [
   SINGULAR: string,
   PLURAL?: string
 ];
 
-export type Meta = {
+export type Deprecated< T > = {
+  since?: string;
+  reason?: string;
+  replacement?: T;
+};
+
+export type Meta< T > = {
   symbol: {
-    common: Symbol;
-    locale?: { [ L in Lang ]?: Symbol };
+    default: Symbol;
+    localized?: { [ L in Lang ]?: Symbol };
   };
   name?: { [ L in Lang ]?: Name };
+  description?: { [ L in Lang ]?: string };
+  category?: UnitCategory[];
+  deprecated?: Deprecated< T >;
 };
