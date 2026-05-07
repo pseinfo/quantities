@@ -33,7 +33,7 @@ export type UnitConv =
 
 export type UnitDef<
   D extends Dimension = Dimension,
-  R extends UnitRef = UnitRef
+  R extends UnitRef< D > = UnitRef< D >
 > = {
   id: R;
   dim: D;
