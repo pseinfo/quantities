@@ -13,7 +13,6 @@ export default ( {
   },
   prefixable: false,
   unitSystem: [ 'atomic' ],
-  category: [ 'accepted' ],
   aliases: [ 'bohr radius' ],
   meta: {
     symbol: {
