@@ -1,10 +1,10 @@
 import type { TimeDim } from '../../../types/dimension';
 import type { UnitDef, UnitRef } from '../../../types/unit';
 
-export const s = 's' as UnitRef< TimeDim, 's' >;
+export const second = 's' as UnitRef< TimeDim, 's' >;
 
 export default ( {
-  id: s,
+  id: second,
   dim: [ 1, 0, 0, 0, 0, 0, 0 ],
   structure: [],
   conversion: 1,
@@ -28,4 +28,4 @@ export default ( {
       de: 'SI-Basiseinheit der Zeit'
     }
   }
-} ) as const satisfies UnitDef< TimeDim, typeof s >;
+} ) as const satisfies UnitDef< TimeDim, typeof second >;

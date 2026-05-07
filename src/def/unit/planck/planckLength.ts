@@ -1,10 +1,10 @@
 import type { LengthDim } from '../../../types/dimension';
 import type { UnitDef, UnitRef } from '../../../types/unit';
 
-export const lP = 'lP' as UnitRef< LengthDim, 'lP' >;
+export const planckLength = 'lP' as UnitRef< LengthDim, 'lP' >;
 
 export default ( {
-  id: lP,
+  id: planckLength,
   dim: [ 0, 1, 0, 0, 0, 0, 0 ],
   structure: [],
   conversion: {
@@ -29,4 +29,4 @@ export default ( {
       de: 'Kleinste sinnvolle Längeneinheit, Planck-Einheiten.'
     }
   }
-} ) as const satisfies UnitDef< LengthDim, typeof lP >;
+} ) as const satisfies UnitDef< LengthDim, typeof planckLength >;
