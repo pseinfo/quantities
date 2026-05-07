@@ -28,4 +28,4 @@ export default ( {
       de: 'SI-Basiseinheit der Zeit'
     }
   }
-} ) as const satisfies UnitDef< TimeDim, 's' >;
+} ) as const satisfies UnitDef< TimeDim, typeof s >;

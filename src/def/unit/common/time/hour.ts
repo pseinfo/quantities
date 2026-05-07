@@ -30,4 +30,4 @@ export default ( {
       de: 'akzeptierte Zeiteinheit, gleich 3600 Sekunden'
     }
   }
-} ) as const satisfies UnitDef< TimeDim, 'hour' >;
+} ) as const satisfies UnitDef< TimeDim, typeof hour >;

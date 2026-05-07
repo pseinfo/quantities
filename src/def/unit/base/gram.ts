@@ -28,4 +28,4 @@ export default ( {
       de: 'SI-Basiseinheit der Masse'
     }
   }
-} ) as const satisfies UnitDef< MassDim, 'g' >;
+} ) as const satisfies UnitDef< MassDim, typeof g >;

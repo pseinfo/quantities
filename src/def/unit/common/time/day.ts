@@ -30,4 +30,4 @@ export default ( {
       de: 'akzeptierte Zeiteinheit, gleich 86400 Sekunden'
     }
   }
-} ) as const satisfies UnitDef< TimeDim, 'day' >;
+} ) as const satisfies UnitDef< TimeDim, typeof day >;

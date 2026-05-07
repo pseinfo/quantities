@@ -30,4 +30,4 @@ export default ( {
       de: 'akzeptierte Zeiteinheit, gleich 60 Sekunden'
     }
   }
-} ) as const satisfies UnitDef< TimeDim, 'min' >;
+} ) as const satisfies UnitDef< TimeDim, typeof min >;

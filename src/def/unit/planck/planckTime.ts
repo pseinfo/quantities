@@ -1,10 +1,10 @@
 import type { TimeDim } from '../../../types/dimension';
 import type { UnitDef, UnitId } from '../../../types/unit';
 
-export const tp = 'tp' as UnitId< 'tP' >;
+export const tP = 'tP' as UnitId< 'tP' >;
 
 export default ( {
-  id: tp,
+  id: tP,
   dim: [ 1, 0, 0, 0, 0, 0, 0 ],
   structure: [],
   conversion: {
@@ -29,4 +29,4 @@ export default ( {
       de: 'Kleinste sinnvolle Zeiteinheit, Planck-Einheiten.'
     }
   }
-} ) as const satisfies UnitDef< TimeDim, 'tP' >;
+} ) as const satisfies UnitDef< TimeDim, typeof tP >;

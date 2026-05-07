@@ -28,4 +28,4 @@ export default ( {
       de: 'SI-Basiseinheit der Länge'
     }
   }
-} ) as const satisfies UnitDef< LengthDim, 'm' >;
+} ) as const satisfies UnitDef< LengthDim, typeof m >;

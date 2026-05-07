@@ -1,7 +1,7 @@
 import type { Meta, UnitSystem } from './common';
 import type { Dimension } from './dimension';
 
-export type UnitId< ID extends string > = ID & { readonly __brand: 'unitId' };
+export type UnitId< ID extends string = string > = ID & { readonly __brand: 'unitId' };
 
 export type UnitCategory =
   | 'base' | 'derived' | 'coherent' | 'accepted' | 'non_si' 
@@ -18,8 +18,11 @@ export type UnitConv =
   | { scale: number, offset: number }
   | 1;
 
-export type UnitDef< D extends Dimension = Dimension, ID extends string = string > = {
-  id: UnitId< ID >;
+export type UnitDef<
+  D extends Dimension = Dimension,
+  ID extends UnitId = UnitId
+> = {
+  id: ID;
   dim: D;
   structure: UnitStruct;
   conversion: UnitConv;

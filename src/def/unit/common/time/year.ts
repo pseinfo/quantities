@@ -30,4 +30,4 @@ export default ( {
       de: 'akzeptierte Zeiteinheit, gleich 31557600 Sekunden'
     }
   }
-} ) as const satisfies UnitDef< TimeDim, 'year' >;
+} ) as const satisfies UnitDef< TimeDim, typeof year >;
