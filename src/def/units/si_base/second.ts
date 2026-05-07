@@ -9,6 +9,7 @@ export default ( {
   conversion: 1,
   prefixable: true,
   unitSystem: [ 'si' ],
+  category: [ 'base' ],
   aliases: [ 'sec', 'second', 'seconds' ],
   meta: {
     symbol: {
@@ -24,7 +25,6 @@ export default ( {
     description: {
       en: 'SI base unit of time',
       de: 'SI-Basiseinheit der Zeit'
-    },
-    category: [ 'base' ]
+    }
   }
 } ) as const satisfies s;

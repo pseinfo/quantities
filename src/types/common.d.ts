@@ -4,10 +4,6 @@ export type UnitSystem =
   | 'si' | 'common' | 'imperial' | 'usc' | 'cgs' | 'gaussian'
   | 'natural' | 'atomic' | 'planck' | 'astronomical';
 
-export type UnitCategory =
-  | 'base' | 'derived' | 'coherent' | 'accepted' | 'non_si' 
-  | 'historical' | 'obsolete' | 'dimensionless' | 'logarithmic';
-
 export type Dimension = readonly [
   T: number, // time
   L: number, // length
@@ -42,6 +38,5 @@ export type Meta< T > = {
   };
   name?: { [ L in Lang ]?: Name };
   description?: { [ L in Lang ]?: string };
-  category?: UnitCategory[];
   deprecated?: Deprecated< T >;
 };
