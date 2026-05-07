@@ -15,18 +15,17 @@ export type Name = readonly [
   PLURAL?: string
 ];
 
-export type Deprecated< T > = {
+export type Deprecated< T = unknown > = {
   since?: string;
   reason?: string;
   replacement?: T;
 };
 
-export type Meta< T > = {
+export type Meta = {
   symbol: {
     default: Symbol;
     localized?: { [ L in Lang ]?: Symbol };
   };
   name?: { [ L in Lang ]?: Name };
   description?: { [ L in Lang ]?: string };
-  deprecated?: Deprecated< T >;
 };

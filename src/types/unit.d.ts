@@ -1,4 +1,4 @@
-import type { Meta, UnitSystem } from './common';
+import type { Deprecated, Meta, UnitSystem } from './common';
 import type { Dimension } from './dimension';
 
 export type UnitId< ID extends string = string > = ID & { readonly __brand: 'unitId' };
@@ -30,5 +30,6 @@ export type UnitDef<
   unitSystem: UnitSystem[];
   category?: UnitCategory[];
   aliases?: string[];
-  meta: Meta< UnitDef< D > >;
+  deprecated?: Deprecated< UnitDef< D > >;
+  meta: Meta;
 };
