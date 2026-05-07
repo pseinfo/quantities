@@ -1,6 +1,7 @@
+import type { LengthDim } from '../../../types/dimensions';
 import type { UnitDef, UnitId } from '../../../types/unit';
 
-export type m = UnitDef< [ 0, 1, 0, 0, 0, 0, 0 ], 'm' >;
+export type m = UnitDef< LengthDim, 'm' >;
 
 export default ( {
   id: 'm' as UnitId< 'm' >,

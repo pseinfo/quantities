@@ -1,6 +1,7 @@
+import type { TimeDim } from '../../../types/dimensions';
 import type { UnitDef, UnitId } from '../../../types/unit';
 
-export type s = UnitDef< [ 1, 0, 0, 0, 0, 0, 0 ], 's' >;
+export type s = UnitDef< TimeDim, 's' >;
 
 export default ( {
   id: 's' as UnitId< 's' >,

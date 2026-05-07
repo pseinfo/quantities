@@ -14,6 +14,8 @@ export type Dimension = readonly [
   J: number  // luminous intensity
 ];
 
+export type DimDef< D extends Dimension > = D;
+
 export type Symbol = {
   ascii: string;
   unicode?: string;
