@@ -1,4 +1,4 @@
-import type { LengthDim } from '../../../types/dimensions';
+import type { LengthDim } from '../../../types/dimension';
 import type { UnitDef, UnitId } from '../../../types/unit';
 
 export type m = UnitDef< LengthDim, 'm' >;

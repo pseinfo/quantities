@@ -4,18 +4,6 @@ export type UnitSystem =
   | 'si' | 'common' | 'imperial' | 'usc' | 'cgs' | 'gaussian'
   | 'natural' | 'atomic' | 'planck' | 'astronomical';
 
-export type Dimension = readonly [
-  T: number, // time
-  L: number, // length
-  M: number, // mass
-  I: number, // electric current
-  θ: number, // temperature
-  N: number, // amount
-  J: number  // luminous intensity
-];
-
-export type DimDef< D extends Dimension > = D;
-
 export type Symbol = {
   ascii: string;
   unicode?: string;

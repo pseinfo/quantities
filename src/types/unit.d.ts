@@ -1,4 +1,5 @@
-import type { Dimension, Meta, UnitSystem } from './common';
+import type { Meta, UnitSystem } from './common';
+import type { Dimension } from './dimension';
 
 export type UnitId< ID extends string > = ID & { readonly __brand: 'unitId' };
 

@@ -1,4 +1,4 @@
-import type { TimeDim } from '../../../types/dimensions';
+import type { TimeDim } from '../../../types/dimension';
 import type { UnitDef, UnitId } from '../../../types/unit';
 
 export type s = UnitDef< TimeDim, 's' >;
