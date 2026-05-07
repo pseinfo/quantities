@@ -1,3 +1,9 @@
+export type Lang = 'en' | 'de';
+
+export type UnitSystem =
+  | 'si' | 'common' | 'imperial' | 'usc' | 'cgs'
+  | 'gauss' | 'planck' | 'atomic' | 'astro';
+
 export type Dimension = readonly [
   T: number, // time
   L: number, // length
