@@ -1,5 +1,6 @@
 import type { Deprecated, Meta, UnitSystem } from './common';
 import type { Dimension } from './dimension';
+import type { PrefixRef } from './prefix';
 
 export type UnitRef<
   D extends Dimension = Dimension,
@@ -23,7 +24,7 @@ export type UnitCategory =
 export type UnitStruct = Array< {
   unit: UnitRef;
   exp: number;
-  prefix?: any;
+  prefix?: PrefixRef;
 } >;
 
 export type UnitConv =
