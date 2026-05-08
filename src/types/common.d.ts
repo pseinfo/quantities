@@ -16,35 +16,33 @@ export type UnitSystem =
   | 'astronomical'
   | 'common';
 
-export type SymbolContext =
-  | 'standard'
-  | 'alternative'
-  | 'typography'
-  | 'legacy';
+export type LangGroup< T = unknown > = { [ L in Lang ]?: T };
 
 export type Symbol = {
-  context: SymbolContext;
-  ascii: string;
+  usage?: {
+    canonical?: boolean;
+    typographic?: boolean;
+    deprecated?: boolean;
+  };
+  systems?: UnitSystem[];
+  lang?: Lang;
+  plain: string;
   unicode?: string;
   latex?: string;
 };
 
-export type Name = readonly [
-  SINGULAR: string,
-  PLURAL?: string
+export type Name = string | readonly [
+  singular: string, plural?: string
 ];
 
 export type Meta = {
-  symbol: {
-    default: Symbol[];
-    localized?: { [ L in Lang ]?: Symbol[] };
-  };
-  name?: { [ L in Lang ]?: Name };
-  description?: { [ L in Lang ]?: string };
+  symbol: Symbol[];
+  name?: LangGroup< Name >;
+  description?: LangGroup< string >;
 };
 
 export type Deprecated< R = unknown > = {
   replacement?: R;
   since?: string;
-  reason?: string;
+  reason?: LangGroup< string >;
 };
