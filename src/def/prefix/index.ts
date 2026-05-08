@@ -1,3 +1,8 @@
 import type { PrefixRegistry } from '../../types/registry';
 
-export default ( [] ) as const satisfies PrefixRegistry;
+import { hecto } from './hecto';
+import { kilo } from './kilo';
+
+export default ( [
+  hecto, kilo
+] ) as const satisfies PrefixRegistry;
