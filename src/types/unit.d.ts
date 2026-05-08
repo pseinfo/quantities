@@ -35,8 +35,8 @@ export type UnitDef<
   D extends Dimension = Dimension,
   R extends UnitRef< D > = UnitRef< D >
 > = {
-  id: R;
-  dim: D;
+  readonly id: R;
+  readonly dim: D;
   structure: UnitStruct;
   conversion: UnitConv;
   prefixable: boolean;
