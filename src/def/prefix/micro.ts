@@ -1,14 +1,14 @@
 import type { PrefixDef, PrefixRef } from '../../types/prefix';
 
-export const micro = 'µ' as PrefixRef< 'µ' >;
+export const micro = 'u' as PrefixRef< 'u' >;
 
 export default ( {
   id: micro,
   factor: 1e-6,
-  aliases: [ 'micro', 'mc', 'u' ],
+  aliases: [ 'μ', 'micro', 'mc' ],
   meta: {
     symbol: [ {
-      id: 'µ',
+      id: 'u',
       canonical: true,
       format: {
         plain: 'μ',
