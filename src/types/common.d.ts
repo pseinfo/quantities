@@ -19,17 +19,17 @@ export type UnitSystem =
 export type LangGroup< T = unknown > = { [ L in Lang ]?: T };
 
 export type Symbol = {
-  id: string;
+  readonly id: string;
   canonical?: boolean;
   deprecated?: boolean;
+  context?: {
+    system?: UnitSystem[];
+    lang?: Lang;
+  };
   format: {
     plain: string;
     unicode?: string;
     latex?: string;
-  };
-  context?: {
-    system?: UnitSystem[];
-    lang?: Lang;
   };
 };
 
