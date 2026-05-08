@@ -10,15 +10,14 @@ export type UnitRef<
   readonly __dim: D;
 };
 
-export type UnitCategory =
+export type UnitStructureType =
   | 'base'
-  | 'derived'
-  | 'coherent'
-  | 'accepted'
+  | 'derived';
+
+export type UnitStatus =
+  | 'active'
   | 'historical'
-  | 'obsolete'
-  | 'dimensionless'
-  | 'logarithmic';
+  | 'obsolete';
 
 export type UnitStruct = Array< {
   unit: UnitRef;
@@ -40,9 +39,16 @@ export type UnitDef<
   structure: UnitStruct;
   conversion: UnitConv;
   prefixable: boolean;
-  unitSystem: UnitSystem[];
-  category?: UnitCategory[];
   aliases?: string[];
+  context?: {
+    system?: UnitSystem[];
+    kind?: UnitStructureType;
+    status?: UnitStatus;
+    property?: {
+      dimensionless?: boolean;
+      logarithmic?: boolean;
+    };
+  };
   deprecated?: Deprecated< UnitRef< D > >;
   meta: Meta;
 };
