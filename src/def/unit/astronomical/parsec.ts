@@ -14,11 +14,7 @@ export default ( {
   aliases: [ 'parsec', 'parsecs' ],
   context: {
     system: [ 'astronomical' ],
-    status: 'active',
-    property: {
-      dimensionless: false,
-      logarithmic: false
-    }
+    status: 'active'
   },
   meta: {
     symbol: [ {

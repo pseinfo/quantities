@@ -13,11 +13,7 @@ export default ( {
   context: {
     system: [ 'si' ],
     kind: 'base',
-    status: 'active',
-    property: {
-      dimensionless: false,
-      logarithmic: false
-    }
+    status: 'active'
   },
   meta: {
     symbol: [ {
