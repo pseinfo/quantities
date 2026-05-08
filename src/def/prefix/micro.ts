@@ -11,7 +11,8 @@ export default ( {
       id: 'u',
       canonical: true,
       format: {
-        plain: 'μ',
+        plain: 'u',
+        unicode: 'μ',
         latex: '\\mu'
       }
     } ],
