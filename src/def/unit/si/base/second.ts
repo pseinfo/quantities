@@ -24,7 +24,7 @@ export default ( {
       id: 's',
       canonical: true,
       context: {
-        system: [ 'si' ],
+        system: [ 'si' ]
       },
       format: {
         plain: 's',

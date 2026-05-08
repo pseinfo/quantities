@@ -24,7 +24,7 @@ export default ( {
       id: 'mol',
       canonical: true,
       context: {
-        system: [ 'si' ],
+        system: [ 'si' ]
       },
       format: {
         plain: 'mol',
