@@ -16,14 +16,17 @@ export type UnitSystem =
   | 'astronomical'
   | 'common';
 
+export type SymbolContext =
+  | 'standard'
+  | 'alternative'
+  | 'typography'
+  | 'legacy';
+
 export type Symbol = {
+  context: SymbolContext;
   ascii: string;
   unicode?: string;
   latex?: string;
-};
-
-export type SymbolAlt = Symbol & {
-  readonly context?: 'standard' | 'alternative' | 'typography' | 'legacy';
 };
 
 export type Name = readonly [
@@ -33,9 +36,8 @@ export type Name = readonly [
 
 export type Meta = {
   symbol: {
-    default: Symbol;
-    alt?: SymbolAlt[];
-    localized?: { [ L in Lang ]?: SymbolAlt[] };
+    default: Symbol[];
+    localized?: { [ L in Lang ]?: Symbol[] };
   };
   name?: { [ L in Lang ]?: Name };
   description?: { [ L in Lang ]?: string };
