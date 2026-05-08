@@ -1,48 +1,54 @@
 import type { UnitRegistry } from '../../types/registry';
 
-import { atomicMass } from './atomic/atomicMass';
-import { bohrRadius } from './atomic/bohrRadius';
+import { astroUnit } from './astronomical/astroUnit';
+import { lightYear } from './astronomical/lightYear';
+import { parsec } from './astronomical/parsec';
 
-import { ampere } from './base/ampere';
-import { gram } from './base/gram';
-import { kelvin } from './base/kelvin';
-import { meter } from './base/meter';
-import { second } from './base/second';
-
-import { biot } from './cgs/biot';
-import { statampere } from './cgs/statampere';
+import { biot } from './cgs/emu/biot';
+import { statampere } from './cgs/esu/statampere';
 
 import { degC } from './common/temperature/degCelsius';
-import { degF } from './common/temperature/degFahrenheit';
-import { degR } from './common/temperature/degRankine';
-
 import { day } from './common/time/day';
 import { hour } from './common/time/hour';
 import { min } from './common/time/minute';
 import { year } from './common/time/year';
 
-import { planckCurrent } from './planck/planckCurrent';
-import { planckLength } from './planck/planckLength';
-import { planckMass } from './planck/planckMass';
-import { planckTemp } from './planck/planckTemp';
-import { planckTime } from './planck/planckTime';
+import { degF } from './imperial/degFahrenheit';
+import { degR } from './imperial/degRankine';
+
+import { atomicMass } from './natural/atomic/atomicMass';
+import { bohrRadius } from './natural/atomic/bohrRadius';
+
+import { planckCurrent } from './natural/planck/planckCurrent';
+import { planckLength } from './natural/planck/planckLength';
+import { planckMass } from './natural/planck/planckMass';
+import { planckTemp } from './natural/planck/planckTemp';
+import { planckTime } from './natural/planck/planckTime';
+
+import { ampere } from './si/ampere';
+import { gram } from './si/gram';
+import { kelvin } from './si/kelvin';
+import { meter } from './si/meter';
+import { second } from './si/second';
 
 export default ( [
   // SI base units
   ampere, gram, kelvin, meter, second,
   // SI derived units
-  // Imperial units
-  // USC units
-  // CGS units
+
+  // CGS / Gaussian units
   biot, statampere,
-  // Gaussian units
-  // Natural units
   // Atomic units
   atomicMass, bohrRadius,
   // Planck units
   planckCurrent, planckLength, planckMass, planckTemp, planckTime,
+  // Imperial units
+  degF, degR,
+  // USC units
+
   // Astronomical units
+  astroUnit, lightYear, parsec,
   // Common units
-  degC, degF, degR,
+  degC,
   day, hour, min, year
 ] ) as const satisfies UnitRegistry;
