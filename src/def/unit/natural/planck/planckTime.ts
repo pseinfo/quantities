@@ -1,5 +1,5 @@
-import type { TimeDim } from '../../../types/dimension';
-import type { UnitDef, UnitRef } from '../../../types/unit';
+import type { TimeDim } from '../../../../types/dimension';
+import type { UnitDef, UnitRef } from '../../../../types/unit';
 
 export const planckTime = 'tP' as UnitRef< TimeDim, 'tP' >;
 
@@ -11,15 +11,16 @@ export default ( {
     factor: 5.39124760e-44
   },
   prefixable: false,
-  unitSystem: [ 'planck', 'natural' ],
+  unitSystem: [ 'natural', 'natural/planck' ],
   aliases: [ 'planck time' ],
   meta: {
     symbol: {
-      default: {
+      default: [ {
+        context: 'standard',
         ascii: 'tP',
         unicode: 'tₚ',
         latex: 't_{\\mathrm{P}}'
-      }
+      } ]
     },
     name: {
       en: [ 'Planck time' ],

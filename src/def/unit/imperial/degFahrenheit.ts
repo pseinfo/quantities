@@ -1,5 +1,5 @@
-import type { TemperatureDim } from '../../../../types/dimension';
-import type { UnitDef, UnitRef } from '../../../../types/unit';
+import type { TemperatureDim } from '../../../types/dimension';
+import type { UnitDef, UnitRef } from '../../../types/unit';
 
 export const degF = 'degF' as UnitRef< TemperatureDim, 'degF' >;
 
@@ -12,16 +12,16 @@ export default ( {
     offset: 255.372222
   },
   prefixable: false,
-  unitSystem: [ 'common' ],
-  category: [ 'non_si' ],
+  unitSystem: [ 'imperial', 'usc' ],
   aliases: [ '°F', 'degree fahrenheit', 'fahrenheit' ],
   meta: {
     symbol: {
-      default: {
+      default: [ {
+        context: 'standard',
         ascii: '°F',
         unicode: '℉',
         latex: '\\mathrm{^{\\circ}F}'
-      }
+      } ]
     },
     name: {
       en: [ 'Fahrenheit' ],

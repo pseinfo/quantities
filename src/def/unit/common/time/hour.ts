@@ -16,10 +16,11 @@ export default ( {
   aliases: [ 'hours' ],
   meta: {
     symbol: {
-      default: {
+      default: [ {
+        context: 'standard',
         ascii: 'h',
         latex: '\\mathrm{h}'
-      }
+      } ]
     },
     name: {
       en: [ 'hour', 'hours' ],

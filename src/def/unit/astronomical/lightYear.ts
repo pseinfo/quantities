@@ -16,15 +16,17 @@ export default ( {
   aliases: [ 'light year', 'light years' ],
   meta: {
     symbol: {
-      default: {
+      default: [ {
+        context: 'standard',
         ascii: 'ly',
         latex: '\\mathrm{ly}'
-      },
+      } ],
       localized: {
-        de: {
+        de: [ {
+          context: 'standard',
           ascii: 'Lj',
           latex: '\\mathrm{Lj}'
-        }
+        } ]
       }
     },
     name: {

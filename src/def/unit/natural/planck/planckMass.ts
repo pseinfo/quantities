@@ -1,5 +1,5 @@
-import type { MassDim } from '../../../types/dimension';
-import type { UnitDef, UnitRef } from '../../../types/unit';
+import type { MassDim } from '../../../../types/dimension';
+import type { UnitDef, UnitRef } from '../../../../types/unit';
 
 export const planckMass = 'mP' as UnitRef< MassDim, 'mP' >;
 
@@ -11,15 +11,16 @@ export default ( {
     factor: 2.17643424e-5
   },
   prefixable: false,
-  unitSystem: [ 'planck', 'natural' ],
+  unitSystem: [ 'natural', 'natural/planck' ],
   aliases: [ 'planck mass' ],
   meta: {
     symbol: {
-      default: {
+      default: [ {
+        context: 'standard',
         ascii: 'mP',
         unicode: 'mₚ',
         latex: 'm_{\\mathrm{P}}'
-      }
+      } ]
     },
     name: {
       en: [ 'Planck mass' ],

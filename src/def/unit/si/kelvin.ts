@@ -14,10 +14,11 @@ export default ( {
   aliases: [ 'kelvin' ],
   meta: {
     symbol: {
-      default: {
+      default: [ {
+        context: 'standard',
         ascii: 'K',
         latex: '\\mathrm{K}'
-      }
+      } ]
     },
     name: {
       en: [ 'Kelvin' ],

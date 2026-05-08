@@ -14,10 +14,11 @@ export default ( {
   aliases: [ 'amperes', 'amp' ],
   meta: {
     symbol: {
-      default: {
+      default: [ {
+        context: 'standard',
         ascii: 'A',
         latex: '\\mathrm{A}'
-      }
+      } ]
     },
     name: {
       en: [ 'ampere', 'amperes' ],

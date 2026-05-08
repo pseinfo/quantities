@@ -13,15 +13,16 @@ export default ( {
   },
   prefixable: false,
   unitSystem: [ 'common' ],
-  category: [ 'non_si' ],
+  category: [ 'accepted' ],
   aliases: [ '°C', 'degree celsius', 'celcius' ],
   meta: {
     symbol: {
-      default: {
+      default: [ {
+        context: 'standard',
         ascii: '°C',
         unicode: '℃',
         latex: '\\mathrm{^{\\circ}C}'
-      }
+      } ]
     },
     name: {
       en: [ 'Celsius' ],

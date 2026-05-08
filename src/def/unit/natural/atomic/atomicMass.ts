@@ -1,5 +1,5 @@
-import type { MassDim } from '../../../types/dimension';
-import type { UnitDef, UnitRef } from '../../../types/unit';
+import type { MassDim } from '../../../../types/dimension';
+import type { UnitDef, UnitRef } from '../../../../types/unit';
 
 export const atomicMass = 'u' as UnitRef< MassDim, 'u' >;
 
@@ -11,15 +11,20 @@ export default ( {
     factor: 1.6605390689252e-24
   },
   prefixable: false,
-  unitSystem: [ 'atomic' ],
+  unitSystem: [ 'natural', 'natural/atomic' ],
   category: [ 'accepted' ],
   aliases: [ 'unified atomic mass unit', 'atomic mass unit', 'atomic mass', 'dalton', 'Da' ],
   meta: {
     symbol: {
-      default: {
+      default: [ {
+        context: 'standard',
         ascii: 'u',
         latex: '\\mathrm{u}'
-      }
+      }, {
+        context: 'alternative',
+        ascii: 'Da',
+        latex: '\\mathrm{Da}'
+      } ]
     },
     name: {
       en: [ 'unified atomic mass unit', 'unified atomic mass units' ],

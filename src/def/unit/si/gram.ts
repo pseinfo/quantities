@@ -14,10 +14,11 @@ export default ( {
   aliases: [ 'gram', 'grams' ],
   meta: {
     symbol: {
-      default: {
+      default: [ {
+        context: 'standard',
         ascii: 'g',
         latex: '\\mathrm{g}'
-      }
+      } ]
     },
     name: {
       en: [ 'gram', 'grams' ],

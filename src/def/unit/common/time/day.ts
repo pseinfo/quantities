@@ -16,10 +16,11 @@ export default ( {
   aliases: [ 'days' ],
   meta: {
     symbol: {
-      default: {
+      default: [ {
+        context: 'standard',
         ascii: 'd',
         latex: '\\mathrm{d}'
-      }
+      } ]
     },
     name: {
       en: [ 'day', 'days' ],

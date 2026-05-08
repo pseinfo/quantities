@@ -16,10 +16,16 @@ export default ( {
   aliases: [ 'minute', 'minutes' ],
   meta: {
     symbol: {
-      default: {
+      default: [ {
+        context: 'standard',
         ascii: 'min',
         latex: '\\mathrm{min}'
-      }
+      }, {
+        context: 'legacy',
+        ascii: '\'',
+        unicode: '′',
+        latex: '\\prime'
+      } ]
     },
     name: {
       en: [ 'minute', 'minutes' ],

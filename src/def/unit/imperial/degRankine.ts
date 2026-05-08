@@ -1,5 +1,5 @@
-import type { TemperatureDim } from '../../../../types/dimension';
-import type { UnitDef, UnitRef } from '../../../../types/unit';
+import type { TemperatureDim } from '../../../types/dimension';
+import type { UnitDef, UnitRef } from '../../../types/unit';
 
 export const degR = 'degR' as UnitRef< TemperatureDim, 'degR' >;
 
@@ -12,15 +12,16 @@ export default ( {
     offset: 0
   },
   prefixable: false,
-  unitSystem: [ 'common' ],
-  category: [ 'non_si' ],
+  unitSystem: [ 'imperial' ],
+  category: [ 'obsolete' ],
   aliases: [ '°R', 'degree rankine', 'rankine' ],
   meta: {
     symbol: {
-      default: {
+      default: [ {
+        context: 'standard',
         ascii: '°R',
         latex: '\\mathrm{^{\\circ}R}'
-      }
+      } ]
     },
     name: {
       en: [ 'Rankine' ],

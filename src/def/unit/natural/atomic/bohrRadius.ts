@@ -1,5 +1,5 @@
-import type { LengthDim } from '../../../types/dimension';
-import type { UnitDef, UnitRef } from '../../../types/unit';
+import type { LengthDim } from '../../../../types/dimension';
+import type { UnitDef, UnitRef } from '../../../../types/unit';
 
 export const bohrRadius = 'a0' as UnitRef< LengthDim, 'a0' >;
 
@@ -12,14 +12,15 @@ export default ( {
     uncertainty: 1.6e-10
   },
   prefixable: false,
-  unitSystem: [ 'atomic' ],
+  unitSystem: [ 'natural', 'natural/atomic' ],
   aliases: [ 'bohr radius' ],
   meta: {
     symbol: {
-      default: {
+      default: [ {
+        context: 'standard',
         ascii: 'a0',
         latex: 'a_{0}'
-      }
+      } ]
     },
     name: {
       en: [ 'Bohr radius' ],

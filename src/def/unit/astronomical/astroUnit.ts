@@ -16,15 +16,25 @@ export default ( {
   aliases: [ 'astronomical unit' ],
   meta: {
     symbol: {
-      default: {
+      default: [ {
+        context: 'standard',
         ascii: 'au',
         latex: '\\mathrm{au}'
-      },
+      }, {
+        context: 'alternative',
+        ascii: 'AU',
+        latex: '\\mathrm{AU}'
+      } ],
       localized: {
-        de: {
+        de: [ {
+          context: 'standard',
           ascii: 'AE',
           latex: '\\mathrm{AE}'
-        }
+        }, {
+          context: 'alternative',
+          ascii: 'ae',
+          latex: '\\mathrm{ae}'
+        } ]
       }
     },
     name: {

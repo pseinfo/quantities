@@ -14,10 +14,16 @@ export default ( {
   aliases: [ 'sec', 'second', 'seconds' ],
   meta: {
     symbol: {
-      default: {
+      default: [ {
+        context: 'standard',
         ascii: 's',
         latex: '\\mathrm{s}'
-      }
+      }, {
+        context: 'legacy',
+        ascii: '\'\'',
+        unicode: '″',
+        latex: '\\prime\\prime'
+      } ]
     },
     name: {
       en: [ 'second', 'seconds' ],

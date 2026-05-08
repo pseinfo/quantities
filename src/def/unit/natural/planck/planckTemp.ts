@@ -1,5 +1,5 @@
-import type { TemperatureDim } from '../../../types/dimension';
-import type { UnitDef, UnitRef } from '../../../types/unit';
+import type { TemperatureDim } from '../../../../types/dimension';
+import type { UnitDef, UnitRef } from '../../../../types/unit';
 
 export const planckTemp = 'TP' as UnitRef< TemperatureDim, 'TP' >;
 
@@ -12,15 +12,16 @@ export default ( {
     uncertainty: 1.1e-5
   },
   prefixable: false,
-  unitSystem: [ 'planck', 'natural' ],
+  unitSystem: [ 'natural', 'natural/planck' ],
   aliases: [ 'planck temperature' ],
   meta: {
     symbol: {
-      default: {
+      default: [ {
+        context: 'standard',
         ascii: 'TP',
         unicode: 'Tₚ',
         latex: 'T_{\\mathrm{P}}'
-      }
+      } ]
     },
     name: {
       en: [ 'Planck temperature' ],

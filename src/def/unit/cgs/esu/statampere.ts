@@ -1,5 +1,5 @@
-import type { ElectricCurrentDim } from '../../../types/dimension';
-import type { UnitDef, UnitRef } from '../../../types/unit';
+import type { ElectricCurrentDim } from '../../../../types/dimension';
+import type { UnitDef, UnitRef } from '../../../../types/unit';
 
 export const statampere = 'statA' as UnitRef< ElectricCurrentDim, 'statA' >;
 
@@ -11,15 +11,16 @@ export default ( {
     factor: 3.33564e-10
   },
   prefixable: false,
-  unitSystem: [ 'cgs', 'gaussian' ],
-  category: [ 'non_si' ],
-  aliases: [ 'statampere' ],
+  unitSystem: [ 'cgs', 'cgs/esu', 'cgs/gaussian' ],
+  category: [ 'derived', 'coherent' ],
+  aliases: [ 'statampere', 'statamperes', 'esu current' ],
   meta: {
     symbol: {
-      default: {
+      default: [ {
+        context: 'standard',
         ascii: 'statA',
         latex: '\\mathrm{statA}'
-      }
+      } ]
     },
     name: {
       en: [ 'statampere', 'statamperes' ],

@@ -12,14 +12,15 @@ export default ( {
   },
   prefixable: true,
   unitSystem: [ 'astronomical' ],
-  aliases: [ 'parsec', 'parsecs' ],
   category: [ 'accepted' ],
+  aliases: [ 'parsec', 'parsecs' ],
   meta: {
     symbol: {
-      default: {
+      default: [ {
+        context: 'standard',
         ascii: 'pc',
         latex: '\\mathrm{pc}'
-      }
+      } ]
     },
     name: {
       en: [ 'parsec', 'parsecs' ],

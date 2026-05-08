@@ -1,5 +1,5 @@
-import type { ElectricCurrentDim } from '../../../types/dimension';
-import type { UnitDef, UnitRef } from '../../../types/unit';
+import type { ElectricCurrentDim } from '../../../../types/dimension';
+import type { UnitDef, UnitRef } from '../../../../types/unit';
 
 export const biot = 'Bi' as UnitRef< ElectricCurrentDim, 'Bi' >;
 
@@ -11,21 +11,20 @@ export default ( {
     factor: 10
   },
   prefixable: false,
-  unitSystem: [ 'cgs' ],
-  category: [ 'non_si' ],
-  aliases: [ 'biot', 'abA', 'abampere' ],
+  unitSystem: [ 'cgs', 'cgs/emu' ],
+  category: [ 'derived', 'coherent' ],
+  aliases: [ 'biot', 'abA', 'abampere', 'abamperes' ],
   meta: {
     symbol: {
-      default: {
+      default: [ {
+        context: 'standard',
         ascii: 'Bi',
         latex: '\\mathrm{Bi}'
-      },
-      localized: {
-        en: {
-          ascii: 'abA',
-          latex: '\\mathrm{abA}'
-        }
-      }
+      }, {
+        context: 'alternative',
+        ascii: 'abA',
+        latex: '\\mathrm{abA}'
+      } ]
     },
     name: {
       en: [ 'abampere', 'abamperes' ],

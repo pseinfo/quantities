@@ -16,10 +16,11 @@ export default ( {
   aliases: [ 'years' ],
   meta: {
     symbol: {
-      default: {
+      default: [ {
+        context: 'standard',
         ascii: 'a',
         latex: '\\mathrm{a}'
-      }
+      } ]
     },
     name: {
       en: [ 'year', 'years' ],

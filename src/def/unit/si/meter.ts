@@ -14,10 +14,11 @@ export default ( {
   aliases: [ 'meter', 'meters', 'metre', 'metres' ],
   meta: {
     symbol: {
-      default: {
+      default: [ {
+        context: 'standard',
         ascii: 'm',
         latex: '\\mathrm{m}'
-      }
+      } ]
     },
     name: {
       en: [ 'meter', 'meters' ],
