@@ -4,6 +4,8 @@ import { astronomicalUnit } from './astronomical/astronomicalUnit';
 import { lightYear } from './astronomical/lightYear';
 import { parsec } from './astronomical/parsec';
 
+import { atomicMassUnit } from './natural/atomic/atomicMassUnit';
+
 import { ampere } from './si/base/ampere';
 import { candela } from './si/base/candela';
 import { gram } from './si/base/gram';
@@ -15,6 +17,8 @@ import { second } from './si/base/second';
 export default ( [
   // SI base units
   ampere, candela, gram, kelvin, meter, mole, second,
+  // Natrural atomic units
+  atomicMassUnit,
   // Astronomical units
   astronomicalUnit, lightYear, parsec
 ] ) as const satisfies UnitRegistry;
