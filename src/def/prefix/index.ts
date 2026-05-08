@@ -27,6 +27,8 @@ import { yocto } from './neg/yocto';
 import { zepto } from './neg/zepto';
 
 export default ( [
-  quetta, ronna, yotta, zetta, exa, peta, tera, giga, mega, kilo, hecto, deca,
-  deci, centi, milli, micro, nano, pico, femto, atto, zepto, yocto, ronto, quekto
+  quetta, ronna, yotta, zetta, exa, peta,
+  tera, giga, mega, kilo, hecto, deca,
+  deci, centi, milli, micro, nano, pico,
+  femto, atto, zepto, yocto, ronto, quekto
 ] ) as const satisfies PrefixRegistry;
