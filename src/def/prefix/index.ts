@@ -1,30 +1,30 @@
 import type { PrefixRegistry } from '../../types/registry';
 
-import { deca } from './positive/deca';
-import { exa } from './positive/exa';
-import { giga } from './positive/giga';
-import { hecto } from './positive/hecto';
-import { kilo } from './positive/kilo';
-import { mega } from './positive/mega';
-import { peta } from './positive/peta';
-import { quetta } from './positive/quetta';
-import { ronna } from './positive/ronna';
-import { tera } from './positive/tera';
-import { yotta } from './positive/yotta';
-import { zetta } from './positive/zetta';
+import { deca } from './pos/deca';
+import { exa } from './pos/exa';
+import { giga } from './pos/giga';
+import { hecto } from './pos/hecto';
+import { kilo } from './pos/kilo';
+import { mega } from './pos/mega';
+import { peta } from './pos/peta';
+import { quetta } from './pos/quetta';
+import { ronna } from './pos/ronna';
+import { tera } from './pos/tera';
+import { yotta } from './pos/yotta';
+import { zetta } from './pos/zetta';
 
-import { atto } from './negative/atto';
-import { centi } from './negative/centi';
-import { deci } from './negative/deci';
-import { femto } from './negative/femto';
-import { micro } from './negative/micro';
-import { milli } from './negative/milli';
-import { nano } from './negative/nano';
-import { pico } from './negative/pico';
-import { quekto } from './negative/quekto';
-import { ronto } from './negative/ronto';
-import { yocto } from './negative/yocto';
-import { zepto } from './negative/zepto';
+import { atto } from './neg/atto';
+import { centi } from './neg/centi';
+import { deci } from './neg/deci';
+import { femto } from './neg/femto';
+import { micro } from './neg/micro';
+import { milli } from './neg/milli';
+import { nano } from './neg/nano';
+import { pico } from './neg/pico';
+import { quekto } from './neg/quekto';
+import { ronto } from './neg/ronto';
+import { yocto } from './neg/yocto';
+import { zepto } from './neg/zepto';
 
 export default ( [
   quetta, ronna, yotta, zetta, exa, peta, tera, giga, mega, kilo, hecto, deca,
