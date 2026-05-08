@@ -1,4 +1,4 @@
-import type { PrefixDef, PrefixRef } from '../../types/prefix';
+import type { PrefixDef, PrefixRef } from '../../../types/prefix';
 
 export const quekto = 'q' as PrefixRef< 'q' >;
 

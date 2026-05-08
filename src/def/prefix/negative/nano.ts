@@ -1,4 +1,4 @@
-import type { PrefixDef, PrefixRef } from '../../types/prefix';
+import type { PrefixDef, PrefixRef } from '../../../types/prefix';
 
 export const nano = 'n' as PrefixRef< 'n' >;
 
