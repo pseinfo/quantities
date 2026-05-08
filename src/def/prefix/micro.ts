@@ -1,0 +1,27 @@
+import type { PrefixDef, PrefixRef } from '../../types/prefix';
+
+export const micro = 'µ' as PrefixRef< 'µ' >;
+
+export default ( {
+  id: micro,
+  factor: 1e-6,
+  aliases: [ 'micro' ],
+  meta: {
+    symbol: [ {
+      id: 'µ',
+      canonical: true,
+      format: {
+        plain: 'µ',
+        latex: '\\mu'
+      }
+    } ],
+    name: {
+      en: 'micro',
+      de: 'Mikro'
+    },
+    description: {
+      en: 'unit prefix with the factor 1e-6',
+      de: 'Einheitenpräfix mit dem Faktor 1e-6'
+    }
+  }
+} ) as const satisfies PrefixDef< typeof micro >;
