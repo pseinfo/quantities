@@ -15,7 +15,6 @@ export type UnitCategory =
   | 'derived'
   | 'coherent'
   | 'accepted'
-  | 'non_si' 
   | 'historical'
   | 'obsolete'
   | 'dimensionless'

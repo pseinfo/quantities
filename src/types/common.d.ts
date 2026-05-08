@@ -4,13 +4,15 @@ export type Lang =
 
 export type UnitSystem =
   | 'si'
+  | 'cgs'
+  | 'cgs/gaussian'
+  | 'cgs/emu'
+  | 'cgs/esu'
+  | 'natural'
+  | 'natural/planck'
+  | 'natural/atomic'
   | 'imperial'
   | 'usc'
-  | 'cgs'
-  | 'gaussian'
-  | 'natural'
-  | 'atomic'
-  | 'planck'
   | 'astronomical'
   | 'common';
 
@@ -18,6 +20,10 @@ export type Symbol = {
   ascii: string;
   unicode?: string;
   latex?: string;
+};
+
+export type SymbolAlt = Symbol & {
+  readonly context?: 'standard' | 'alternative' | 'typography' | 'legacy';
 };
 
 export type Name = readonly [
@@ -28,7 +34,8 @@ export type Name = readonly [
 export type Meta = {
   symbol: {
     default: Symbol;
-    localized?: { [ L in Lang ]?: Symbol };
+    alt?: SymbolAlt[];
+    localized?: { [ L in Lang ]?: SymbolAlt[] };
   };
   name?: { [ L in Lang ]?: Name };
   description?: { [ L in Lang ]?: string };
