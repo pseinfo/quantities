@@ -20,8 +20,8 @@ export default ( {
       }
     } ],
     name: {
-      en: [ 'time', 'times' ],
-      de: [ 'Zeit', 'Zeiten' ]
+      en: 'time',
+      de: 'Zeit'
     },
     description: {
       en: 'quantity of time',
