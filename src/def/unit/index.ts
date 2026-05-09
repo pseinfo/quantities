@@ -36,9 +36,13 @@ import { meter } from './si/base/meter';
 import { mole } from './si/base/mole';
 import { second } from './si/base/second';
 
+import { newton } from './si/derived/newton';
+
 export default ( [
   // SI base units
   ampere, candela, gram, kelvin, meter, mole, second,
+  // SI derived units
+  newton,
   // CGS EMU units
   biot,
   // CGS ESU / Gaussian units
