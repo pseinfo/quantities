@@ -12,7 +12,7 @@ export default ( {
   aliases: [ 'sec', 'second', 'seconds' ],
   context: {
     system: [ 'si' ],
-    kind: 'base',
+    si: 'base',
     status: 'active'
   },
   meta: {

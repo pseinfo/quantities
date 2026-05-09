@@ -12,7 +12,7 @@ export default ( {
   aliases: [ 'ampere', 'amperes' ],
   context: {
     system: [ 'si' ],
-    kind: 'base',
+    si: 'base',
     status: 'active'
   },
   meta: {

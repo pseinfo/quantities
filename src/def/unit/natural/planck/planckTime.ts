@@ -15,7 +15,6 @@ export default ( {
   aliases: [ 'planck time', 'planck times' ],
   context: {
     system: [ 'natural', 'natural_planck' ],
-    kind: 'base',
     status: 'active'
   },
   meta: {

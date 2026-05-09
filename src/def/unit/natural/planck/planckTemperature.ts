@@ -15,7 +15,6 @@ export default ( {
   aliases: [ 'planck temperature', 'planck temperatures' ],
   context: {
     system: [ 'natural', 'natural_planck' ],
-    kind: 'base',
     status: 'active'
   },
   meta: {

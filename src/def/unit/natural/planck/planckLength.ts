@@ -15,7 +15,6 @@ export default ( {
   aliases: [ 'planck length', 'planck lengths' ],
   context: {
     system: [ 'natural', 'natural_planck' ],
-    kind: 'base',
     status: 'active'
   },
   meta: {

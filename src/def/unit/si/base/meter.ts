@@ -12,7 +12,7 @@ export default ( {
   aliases: [ 'meter', 'meters', 'metre', 'metres' ],
   context: {
     system: [ 'si' ],
-    kind: 'base',
+    si: 'base',
     status: 'active'
   },
   meta: {

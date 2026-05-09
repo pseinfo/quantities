@@ -14,7 +14,6 @@ export default ( {
   aliases: [ 'planck mass', 'planck masses' ],
   context: {
     system: [ 'natural', 'natural_planck' ],
-    kind: 'base',
     status: 'active'
   },
   meta: {

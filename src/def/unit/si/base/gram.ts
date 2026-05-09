@@ -12,7 +12,7 @@ export default ( {
   aliases: [ 'gram', 'grams' ],
   context: {
     system: [ 'si' ],
-    kind: 'base',
+    si: 'base',
     status: 'active'
   },
   meta: {
