@@ -6,6 +6,11 @@ import { parsec } from './astronomical/parsec';
 
 import { atomicMassUnit } from './natural/atomic/atomicMassUnit';
 
+import { planckLength } from './natural/planck/planckLength';
+import { planckMass } from './natural/planck/planckMass';
+import { planckTemperature } from './natural/planck/planckTemperature';
+import { planckTime } from './natural/planck/planckTime';
+
 import { ampere } from './si/base/ampere';
 import { candela } from './si/base/candela';
 import { gram } from './si/base/gram';
@@ -19,6 +24,8 @@ export default ( [
   ampere, candela, gram, kelvin, meter, mole, second,
   // Natrural atomic units
   atomicMassUnit,
+  // Natural Planck units
+  planckLength, planckMass, planckTemperature, planckTime,
   // Astronomical units
   astronomicalUnit, lightYear, parsec
 ] ) as const satisfies UnitRegistry;
