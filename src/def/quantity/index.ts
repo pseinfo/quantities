@@ -1,3 +1,8 @@
 import type { QuantityRegistry } from '../../types/registry';
 
-export default ( [] ) as const satisfies QuantityRegistry;
+import { time } from './base/time';
+
+export default ( [
+  // Base quantities
+  time
+] ) as const satisfies QuantityRegistry;

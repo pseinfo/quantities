@@ -1,7 +1,7 @@
-import type { TimeDim } from '../../types/dimension';
-import type { QuantityDef, QuantityRef } from '../../types/quantity';
+import type { TimeDim } from '../../../types/dimension';
+import type { QuantityDef, QuantityRef } from '../../../types/quantity';
 
-import { day, hour, minute, planckTime, second, year } from '../unit';
+import { day, hour, minute, planckTime, second, year } from '../../unit';
 
 export const time = 'time' as QuantityRef< TimeDim, 'time' >;
 
