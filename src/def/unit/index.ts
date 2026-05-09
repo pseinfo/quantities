@@ -4,6 +4,8 @@ import { astronomicalUnit } from './astronomical/astronomicalUnit';
 import { lightYear } from './astronomical/lightYear';
 import { parsec } from './astronomical/parsec';
 
+import { dyn } from './cgs/dyn';
+
 import { biot } from './cgs/emu/biot';
 
 import { statampere } from './cgs/esu/statampere';
@@ -43,6 +45,8 @@ export default ( [
   ampere, candela, gram, kelvin, meter, mole, second,
   // SI derived units
   newton,
+  // CGC units
+  dyn,
   // CGS EMU units
   biot,
   // CGS ESU / Gaussian units
