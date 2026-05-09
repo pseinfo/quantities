@@ -1,4 +1,4 @@
-import type { ForceDim } from '../../../../types/dimension';
+import type { EnergyDim } from '../../../../types/dimension';
 import type { UnitDef, UnitRef } from '../../../../types/unit';
 
 import { kilo } from '../../../prefix';
@@ -7,25 +7,25 @@ import { gram } from '../base/gram';
 import { meter } from '../base/meter';
 import { second } from '../base/second';
 
-export const newton = 'N' as UnitRef< ForceDim, 'N' >;
+export const joule = 'J' as UnitRef< EnergyDim, 'J' >;
 
 export default ( {
-  id: newton,
-  dim: [ -2, 1, 1, 0, 0, 0, 0 ],
+  id: joule,
+  dim: [ -2, 2, 1, 0, 0, 0, 0 ],
   structure: [ {
     unit: gram,
     exp: 1,
     prefix: kilo
   }, {
     unit: meter,
-    exp: 1
+    exp: 2
   }, {
     unit: second,
     exp: -2
   } ],
   conversion: 1,
   prefixable: true,
-  aliases: [ 'newton', 'newtons' ],
+  aliases: [ 'joule', 'joules' ],
   context: {
     system: [ 'si' ],
     si: 'derived',
@@ -33,20 +33,20 @@ export default ( {
   },
   meta: {
     symbol: [ {
-      id: 'N',
+      id: 'J',
       canonical: true,
       format: {
-        plain: 'N',
-        latex: '\\mathrm{N}'
+        plain: 'J',
+        latex: '\\mathrm{J}'
       }
     } ],
     name: {
-      en: [ 'newton', 'newtons' ],
-      de: [ 'Newton' ]
+      en: [ 'joule', 'joules' ],
+      de: [ 'Joule' ]
     },
     description: {
-      en: 'derived SI unit of force',
-      de: 'abgeleitete SI-Einheit der Kraft'
+      en: 'derived SI unit of energy',
+      de: 'abgeleitete SI-Einheit der Energie'
     }
   }
-} ) as const satisfies UnitDef< ForceDim, typeof newton >;
+} ) as const satisfies UnitDef< EnergyDim, typeof joule >;

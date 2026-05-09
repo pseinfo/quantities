@@ -1,4 +1,4 @@
-import type { ForceDim } from '../../../../types/dimension';
+import type { PowerDim } from '../../../../types/dimension';
 import type { UnitDef, UnitRef } from '../../../../types/unit';
 
 import { kilo } from '../../../prefix';
@@ -7,25 +7,25 @@ import { gram } from '../base/gram';
 import { meter } from '../base/meter';
 import { second } from '../base/second';
 
-export const newton = 'N' as UnitRef< ForceDim, 'N' >;
+export const watt = 'W' as UnitRef< PowerDim, 'W' >;
 
 export default ( {
-  id: newton,
-  dim: [ -2, 1, 1, 0, 0, 0, 0 ],
+  id: watt,
+  dim: [ -3, 2, 1, 0, 0, 0, 0 ],
   structure: [ {
     unit: gram,
     exp: 1,
     prefix: kilo
   }, {
     unit: meter,
-    exp: 1
+    exp: 2
   }, {
     unit: second,
-    exp: -2
+    exp: -3
   } ],
   conversion: 1,
   prefixable: true,
-  aliases: [ 'newton', 'newtons' ],
+  aliases: [ 'watt', 'watts' ],
   context: {
     system: [ 'si' ],
     si: 'derived',
@@ -33,20 +33,20 @@ export default ( {
   },
   meta: {
     symbol: [ {
-      id: 'N',
+      id: 'W',
       canonical: true,
       format: {
-        plain: 'N',
-        latex: '\\mathrm{N}'
+        plain: 'W',
+        latex: '\\mathrm{W}'
       }
     } ],
     name: {
-      en: [ 'newton', 'newtons' ],
-      de: [ 'Newton' ]
+      en: [ 'watt', 'watts' ],
+      de: [ 'Watt' ]
     },
     description: {
-      en: 'derived SI unit of force',
-      de: 'abgeleitete SI-Einheit der Kraft'
+      en: 'derived SI unit of power',
+      de: 'abgeleitete SI-Einheit der Leistung'
     }
   }
-} ) as const satisfies UnitDef< ForceDim, typeof newton >;
+} ) as const satisfies UnitDef< PowerDim, typeof watt >;

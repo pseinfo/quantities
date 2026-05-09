@@ -38,13 +38,15 @@ import { meter } from './si/base/meter';
 import { mole } from './si/base/mole';
 import { second } from './si/base/second';
 
+import { joule } from './si/derived/joule';
 import { newton } from './si/derived/newton';
+import { watt } from './si/derived/watt';
 
 export default ( [
   // SI base units
   ampere, candela, gram, kelvin, meter, mole, second,
   // SI derived units
-  newton,
+  joule, newton, watt,
   // CGC units
   dyn,
   // CGS EMU units
