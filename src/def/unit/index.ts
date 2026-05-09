@@ -50,6 +50,15 @@ import { pascal } from './si/derived/pascal';
 import { volt } from './si/derived/volt';
 import { watt } from './si/derived/watt';
 
+export {
+  ampere, atomicMassUnit, astronomicalUnit, becquerel, biot,
+  celsius, candela, coulomb, delisle, day, dyn, fahrenheit,
+  gram, hertz, hour, joule, kelvin, leiden, lightYear, meter,
+  mole, minute, newton, parsec, pascal, planckLength, planckMass,
+  planckTemperature, planckTime, radian, rankine, reaumur, romer,
+  second, statampere, steradian, volt, watt, year
+};
+
 export default ( [
   // SI base units
   ampere, candela, gram, kelvin, meter, mole, second,
