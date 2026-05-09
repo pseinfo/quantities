@@ -1,10 +1,10 @@
 import type { TemperatureDim } from '../../../../types/dimension';
 import type { UnitDef, UnitRef } from '../../../../types/unit';
 
-export const degFahrenheit = 'degF' as UnitRef< TemperatureDim, 'degF' >;
+export const fahrenheit = 'degF' as UnitRef< TemperatureDim, 'degF' >;
 
 export default ( {
-  id: degFahrenheit,
+  id: fahrenheit,
   dim: [ 0, 0, 0, 0, 1, 0, 0 ],
   structure: [],
   conversion: {
@@ -39,4 +39,4 @@ export default ( {
       de: 'anglo-amerikanische Einheit der thermodynamischen Temperatur'
     }
   }
-} ) as const satisfies UnitDef< TemperatureDim, typeof degFahrenheit >;
+} ) as const satisfies UnitDef< TemperatureDim, typeof fahrenheit >;

@@ -1,10 +1,10 @@
 import type { TemperatureDim } from '../../../../types/dimension';
 import type { UnitDef, UnitRef } from '../../../../types/unit';
 
-export const degRankine = 'degRa' as UnitRef< TemperatureDim, 'degRa' >;
+export const rankine = 'degRa' as UnitRef< TemperatureDim, 'degRa' >;
 
 export default ( {
-  id: degRankine,
+  id: rankine,
   dim: [ 0, 0, 0, 0, 1, 0, 0 ],
   structure: [],
   conversion: {
@@ -48,4 +48,4 @@ export default ( {
       de: 'Rankine-Skala, absolute Temperaturskala mit Grad Fahrenheit als Einheitsgröße, 0 °Ra = 0 K'
     }
   }
-} ) as const satisfies UnitDef< TemperatureDim, typeof degRankine >;
+} ) as const satisfies UnitDef< TemperatureDim, typeof rankine >;

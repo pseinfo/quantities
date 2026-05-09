@@ -8,9 +8,9 @@ import { biot } from './cgs/emu/biot';
 
 import { statampere } from './cgs/esu/statampere';
 
-import { degCelsius } from './common/temperature/degCelsius';
-import { degFahrenheit } from './common/temperature/degFahrenheit';
-import { degRankine } from './common/temperature/degRankine';
+import { celsius } from './common/temperature/celsius';
+import { fahrenheit } from './common/temperature/fahrenheit';
+import { rankine } from './common/temperature/rankine';
 
 import { atomicMassUnit } from './natural/atomic/atomicMassUnit';
 
@@ -35,7 +35,7 @@ export default ( [
   // CGS ESU / Gaussian units
   statampere,
   // Common units
-  degCelsius, degFahrenheit, degRankine,
+  celsius, fahrenheit, rankine,
   // Natrural atomic units
   atomicMassUnit,
   // Natural Planck units

@@ -1,10 +1,10 @@
 import type { TemperatureDim } from '../../../../types/dimension';
 import type { UnitDef, UnitRef } from '../../../../types/unit';
 
-export const degCelsius = 'degC' as UnitRef< TemperatureDim, 'degC' >;
+export const celsius = 'degC' as UnitRef< TemperatureDim, 'degC' >;
 
 export default ( {
-  id: degCelsius,
+  id: celsius,
   dim: [ 0, 0, 0, 0, 1, 0, 0 ],
   structure: [],
   conversion: {
@@ -39,4 +39,4 @@ export default ( {
       de: 'akzeptierte Einheit der thermodynamischen Temperatur, definiert durch den Tripelpunkt des Wassers, 0 °C = 273,15 K'
     }
   }
-} ) as const satisfies UnitDef< TemperatureDim, typeof degCelsius >;
+} ) as const satisfies UnitDef< TemperatureDim, typeof celsius >;
