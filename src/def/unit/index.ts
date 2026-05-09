@@ -46,13 +46,14 @@ import { coulomb } from './si/derived/coulomb';
 import { hertz } from './si/derived/hertz';
 import { joule } from './si/derived/joule';
 import { newton } from './si/derived/newton';
+import { pascal } from './si/derived/pascal';
 import { watt } from './si/derived/watt';
 
 export default ( [
   // SI base units
   ampere, candela, gram, kelvin, meter, mole, second,
   // SI derived units
-  becquerel, coulomb, hertz, joule, newton, watt,
+  becquerel, coulomb, hertz, joule, newton, pascal, watt,
   // CGC units
   dyn,
   // CGS EMU units

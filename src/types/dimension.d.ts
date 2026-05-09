@@ -21,6 +21,7 @@ export type AmountOfSubstanceDim = DimDef< [ 0, 0, 0, 0, 0, 1, 0 ] >;
 export type LuminousIntensityDim = DimDef< [ 0, 0, 0, 0, 0, 0, 1 ] >;
 
 export type PowerDim = DimDef< [ -3, 2, 1, 0, 0, 0, 0 ] >;
+export type PressureDim = DimDef< [ -2, -1, 1, 0, 0, 0 ,0 ] >;
 export type ForceDim = DimDef< [ -2, 1, 1, 0, 0, 0, 0 ] >;
 export type EnergyDim = DimDef< [ -2, 2, 1, 0, 0, 0, 0 ] >;
 export type ActivityDim = DimDef< [ -1, 0, 0, 0, 0, 0, 0 ] >;
