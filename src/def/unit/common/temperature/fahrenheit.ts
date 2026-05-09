@@ -12,7 +12,7 @@ export default ( {
   conversion: {
     base: kelvin,
     scale: 5 / 9,
-    offset: 255.3722222222222
+    offset: 459.67 * 5 / 9
   },
   prefixable: false,
   aliases: [ '°F', 'degree fahrenheit', 'degrees fahrenheit', 'fahrenheit' ],

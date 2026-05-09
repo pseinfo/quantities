@@ -12,7 +12,7 @@ export default ( {
   conversion: {
     base: kelvin,
     scale: 40 / 21,
-    offset: 273.15 - 7.5 * 40 / 21
+    offset: 273.15 - ( 7.5 * 40 / 21 )
   },
   prefixable: false,
   aliases: [ '°Ro', 'degree romer', 'degrees romer', 'romer', 'roemer' ],
