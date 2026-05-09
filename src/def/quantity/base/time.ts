@@ -1,14 +1,20 @@
 import type { TimeDim } from '../../../types/dimension';
 import type { QuantityDef, QuantityRef } from '../../../types/quantity';
 
-import { day, hour, minute, planckTime, second, year } from '../../unit';
+import {
+  day, gregorianYear, hour, julianYear, minute,
+  planckTime, second, siderialYear, week
+} from '../../unit';
 
 export const time = 'time' as QuantityRef< TimeDim, 'time' >;
 
 export default ( {
   id: time,
   dim: [ 1, 0, 0, 0, 0, 0, 0 ],
-  units: [ day, hour, minute, planckTime, second, year ],
+  units: [
+    day, gregorianYear, hour, julianYear, minute,
+    planckTime, second, siderialYear, week
+  ],
   baseUnit: second,
   meta: {
     symbol: [ {

@@ -3,6 +3,7 @@ import type { UnitRegistry } from '../../types/registry';
 import { astronomicalUnit } from './astronomical/astronomicalUnit';
 import { lightYear } from './astronomical/lightYear';
 import { parsec } from './astronomical/parsec';
+import { siderialYear } from './astronomical/siderealYear';
 
 import { dyn } from './cgs/dyn';
 
@@ -22,9 +23,11 @@ import { reaumur } from './common/temperature/reaumur';
 import { romer } from './common/temperature/romer';
 
 import { day } from './common/time/day';
+import { gregorianYear } from './common/time/gregorianYear';
 import { hour } from './common/time/hour';
+import { julianYear } from './common/time/julianYear';
 import { minute } from './common/time/minute';
-import { year } from './common/time/year';
+import { week } from './common/time/week';
 
 import { atomicMassUnit } from './natural/atomic/atomicMassUnit';
 
@@ -53,10 +56,11 @@ import { watt } from './si/derived/watt';
 export {
   ampere, atomicMassUnit, astronomicalUnit, becquerel, biot,
   celsius, candela, coulomb, delisle, day, dyn, fahrenheit,
-  gram, hertz, hour, joule, kelvin, leiden, lightYear, meter,
-  mole, minute, newton, parsec, pascal, planckLength, planckMass,
-  planckTemperature, planckTime, radian, rankine, reaumur, romer,
-  second, statampere, steradian, volt, watt, year
+  gram, gregorianYear, hertz, hour, joule, julianYear, kelvin,
+  leiden, lightYear, meter, mole, minute, newton, parsec, pascal,
+  planckLength, planckMass, planckTemperature, planckTime, radian,
+  rankine, reaumur, romer, second, siderialYear, statampere,
+  steradian, volt, watt, week
 };
 
 export default ( [
@@ -75,11 +79,11 @@ export default ( [
   // Common temperature units
   celsius, delisle, fahrenheit, leiden, rankine, reaumur, romer,
   // Common time units
-  day, hour, minute, year,
+  day, gregorianYear, hour, julianYear, minute, week,
   // Natrural atomic units
   atomicMassUnit,
   // Natural Planck units
   planckLength, planckMass, planckTemperature, planckTime,
   // Astronomical units
-  astronomicalUnit, lightYear, parsec
+  astronomicalUnit, lightYear, parsec, siderialYear
 ] ) as const satisfies UnitRegistry;

@@ -1,12 +1,12 @@
-import type { TimeDim } from '../../../../types/dimension';
-import type { UnitDef, UnitRef } from '../../../../types/unit';
+import type { TimeDim } from '../../../types/dimension';
+import type { UnitDef, UnitRef } from '../../../types/unit';
 
-import { second } from '../../si/base/second';
+import { second } from '../si/base/second';
 
-export const year = 'year' as UnitRef< TimeDim, 'year' >;
+export const siderialYear = 'year' as UnitRef< TimeDim, 'year' >;
 
 export default ( {
-  id: year,
+  id: siderialYear,
   dim: [ 1, 0, 0, 0, 0, 0, 0 ],
   structure: [],
   conversion: {
@@ -16,7 +16,7 @@ export default ( {
   prefixable: false,
   aliases: [ 'year', 'years' ],
   context: {
-    system: [ 'common', 'si', 'astronomical' ],
+    system: [ 'astronomical', 'si' ],
     si: 'accepted',
     status: 'active'
   },
@@ -38,4 +38,4 @@ export default ( {
       de: 'akzeptierte Zeiteinheit, definiert als siderisches Jahr (ca. 365,256 Tage)'
     }
   }
-} ) as const satisfies UnitDef< TimeDim, typeof year >;
+} ) as const satisfies UnitDef< TimeDim, typeof siderialYear >;
