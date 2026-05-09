@@ -26,6 +26,13 @@ import { ronto } from './neg/ronto';
 import { yocto } from './neg/yocto';
 import { zepto } from './neg/zepto';
 
+export {
+  atto, centi, deca, deci, exa, femto, giga,
+  hecto, kilo, mega, micro, milli, nano, peta,
+  pico, quekto, quetta, ronna, ronto, tera,
+  yocto, yotta, zepto, zetta
+};
+
 export default ( [
   quetta, ronna, yotta, zetta, exa, peta,
   tera, giga, mega, kilo, hecto, deca,
