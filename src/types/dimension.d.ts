@@ -20,6 +20,7 @@ export type TemperatureDim = DimDef< [ 0, 0, 0, 0, 1, 0, 0 ] >;
 export type AmountOfSubstanceDim = DimDef< [ 0, 0, 0, 0, 0, 1, 0 ] >;
 export type LuminousIntensityDim = DimDef< [ 0, 0, 0, 0, 0, 0, 1 ] >;
 
+export type PowerDim = DimDef< [ -3, 2, 1, 0, 0, 0, 0 ] >;
 export type ForceDim = DimDef< [ -2, 1, 1, 0, 0, 0, 0 ] >;
 export type EnergyDim = DimDef< [ -2, 2, 1, 0, 0, 0, 0 ] >;
-export type PowerDim = DimDef< [ -3, 2, 1, 0, 0, 0, 0 ] >;
+export type ElectricChargeDim = DimDef< [ 1, 0, 0, 1, 0, 0, 0 ] >;
