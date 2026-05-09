@@ -10,9 +10,10 @@ export type UnitRef<
   readonly __dim: D;
 };
 
-export type UnitStructureType =
+export type UnitSIType =
   | 'base'
-  | 'derived';
+  | 'derived'
+  | 'accepted';
 
 export type UnitStatus =
   | 'active'
@@ -42,7 +43,7 @@ export type UnitDef<
   aliases?: string[];
   context?: {
     system?: UnitSystem[];
-    kind?: UnitStructureType;
+    si?: UnitSIType;
     status?: UnitStatus;
     property?: {
       dimensionless?: boolean;
