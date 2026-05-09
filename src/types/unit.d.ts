@@ -26,9 +26,9 @@ export type UnitStruct = Array< {
   prefix?: PrefixRef;
 } >;
 
-export type UnitConv< D extends Dimension = Dimension > =
-  | { factor: number, uncertainty?: number, base?: UnitRef< D > }
-  | { scale: number, offset: number, uncertainty?: number, base?: UnitRef< D > }
+export type UnitConv =
+  | { factor: number, uncertainty?: number }
+  | { scale: number, offset: number, uncertainty?: number }
   | 1;
 
 export type UnitDef<
@@ -38,7 +38,7 @@ export type UnitDef<
   readonly id: R;
   readonly dim: D;
   structure: UnitStruct;
-  conversion: UnitConv< D >;
+  conversion: UnitConv;
   prefixable: boolean;
   aliases?: string[];
   context?: {
