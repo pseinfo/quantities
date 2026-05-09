@@ -17,6 +17,7 @@ export type QuantityDef<
   readonly id: R;
   readonly dim: D;
   readonly units: UnitRef< D >[];
+  baseUnit: UnitRef< D >;
   deprecated?: Deprecated< QuantityRef< D > >;
   meta: Meta;
 };
