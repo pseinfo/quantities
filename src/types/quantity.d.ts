@@ -1,4 +1,6 @@
+import type { Deprecated, Meta } from './common';
 import type { Dimension } from './dimension';
+import type { UnitRef } from './unit';
 
 export type QuantityRef<
   D extends Dimension = Dimension,
@@ -11,4 +13,10 @@ export type QuantityRef<
 export type QuantityDef<
   D extends Dimension = Dimension,
   R extends QuantityRef< D > = QuantityRef< D >
-> = {};
+> = {
+  readonly id: R;
+  readonly dim: D;
+  readonly units: UnitRef< D >[];
+  deprecated?: Deprecated< QuantityRef< D > >;
+  meta: Meta;
+};
