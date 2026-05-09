@@ -38,8 +38,8 @@ export default ( {
       de: [ 'Pascal' ]
     },
     description: {
-      en: 'derived SI unit of pressure',
-      de: 'abgeleitete SI-Einheit des Drucks'
+      en: 'derived SI unit of pressure and stress',
+      de: 'abgeleitete SI-Einheit des Drucks und der mechanischen Spannung'
     }
   }
 } ) as const satisfies UnitDef< PressureDim, typeof pascal >;
