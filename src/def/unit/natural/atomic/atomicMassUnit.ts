@@ -11,7 +11,7 @@ export default ( {
   structure: [],
   conversion: {
     base: gram,
-    factor: 1.6605390689252e-27
+    factor: 1.6605390689252e-24
   },
   prefixable: false,
   aliases: [ 'unified atomic mass unit', 'atomic mass unit', 'dalton' ],

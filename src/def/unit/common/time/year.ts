@@ -11,7 +11,7 @@ export default ( {
   structure: [],
   conversion: {
     base: second,
-    factor: 31558149.54
+    factor: 3.155814954e7
   },
   prefixable: false,
   aliases: [ 'year', 'years' ],

@@ -11,7 +11,7 @@ export default ( {
   structure: [],
   conversion: {
     base: second,
-    factor: 3600
+    factor: 3.6e3
   },
   prefixable: false,
   aliases: [ 'hour', 'hours' ],

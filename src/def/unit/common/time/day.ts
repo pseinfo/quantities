@@ -11,7 +11,7 @@ export default ( {
   structure: [],
   conversion: {
     base: second,
-    factor: 86400
+    factor: 8.64e4
   },
   prefixable: false,
   aliases: [ 'day', 'days' ],
