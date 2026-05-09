@@ -14,6 +14,7 @@ export default ( {
   aliases: [ 'unified atomic mass unit', 'atomic mass unit', 'dalton' ],
   context: {
     system: [ 'natural', 'natural_atomic' ],
+    si: 'accepted',
     status: 'active'
   },
   meta: {

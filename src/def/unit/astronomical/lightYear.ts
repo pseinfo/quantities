@@ -14,6 +14,7 @@ export default ( {
   aliases: [ 'lyr', 'light year', 'light years' ],
   context: {
     system: [ 'astronomical' ],
+    si: 'accepted',
     status: 'active'
   },
   meta: {

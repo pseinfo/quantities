@@ -14,6 +14,7 @@ export default ( {
   aliases: [ 'AU', 'astronomical unit', 'astronomical units' ],
   context: {
     system: [ 'astronomical' ],
+    si: 'accepted',
     status: 'active'
   },
   meta: {

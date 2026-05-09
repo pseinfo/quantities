@@ -26,6 +26,16 @@ export default ( {
         plain: 's',
         latex: '\\mathrm{s}'
       }
+    }, {
+      id: 'prime',
+      context: {
+        system: [ 'si' ]
+      },
+      format: {
+        plain: '\'\'',
+        unicode: '″',
+        latex: '\\prime\\prime'
+      }
     } ],
     name: {
       en: [ 'second', 'seconds' ],

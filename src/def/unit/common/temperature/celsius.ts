@@ -15,6 +15,7 @@ export default ( {
   aliases: [ '°C', 'degree celsius', 'degrees celsius', 'celsius' ],
   context: {
     system: [ 'common' ],
+    si: 'accepted',
     status: 'active'
   },
   meta: {

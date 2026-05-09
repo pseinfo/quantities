@@ -14,6 +14,7 @@ export default ( {
   aliases: [ 'parsec', 'parsecs' ],
   context: {
     system: [ 'astronomical' ],
+    si: 'accepted',
     status: 'active'
   },
   meta: {
