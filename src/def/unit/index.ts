@@ -4,6 +4,9 @@ import { astronomicalUnit } from './astronomical/astronomicalUnit';
 import { lightYear } from './astronomical/lightYear';
 import { parsec } from './astronomical/parsec';
 
+import { biot } from './cgs/emu/biot';
+import { statampere } from './cgs/esu/statampere';
+
 import { atomicMassUnit } from './natural/atomic/atomicMassUnit';
 
 import { planckLength } from './natural/planck/planckLength';
@@ -22,6 +25,10 @@ import { second } from './si/base/second';
 export default ( [
   // SI base units
   ampere, candela, gram, kelvin, meter, mole, second,
+  // CGS EMU units
+  biot,
+  // CGS ESU / Gaussian units
+  statampere,
   // Natrural atomic units
   atomicMassUnit,
   // Natural Planck units
