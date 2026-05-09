@@ -1,6 +1,8 @@
 import type { MassDim } from '../../../../types/dimension';
 import type { UnitDef, UnitRef } from '../../../../types/unit';
 
+import { gram } from '../../si/base/gram';
+
 export const planckMass = 'mP' as UnitRef< MassDim, 'mP' >;
 
 export default ( {
@@ -8,6 +10,7 @@ export default ( {
   dim: [ 0, 0, 1, 0, 0, 0, 0 ],
   structure: [],
   conversion: {
+    base: gram,
     factor: 2.17643424e-5
   },
   prefixable: false,

@@ -6,6 +6,7 @@ import { centi } from '../../prefix';
 import { gram } from '../si/base/gram';
 import { meter } from '../si/base/meter';
 import { second } from '../si/base/second';
+import { newton } from '../si/derived/newton';
 
 export const dyn = 'dyn' as UnitRef< ForceDim, 'dyn' >;
 
@@ -24,6 +25,7 @@ export default ( {
     exp: -2
   } ],
   conversion: {
+    base: newton,
     factor: 1e-5
   },
   prefixable: false,

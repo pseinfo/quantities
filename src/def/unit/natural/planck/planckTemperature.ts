@@ -1,6 +1,8 @@
 import type { TemperatureDim } from '../../../../types/dimension';
 import type { UnitDef, UnitRef } from '../../../../types/unit';
 
+import { kelvin } from '../../si/base/kelvin';
+
 export const planckTemperature = 'TP' as UnitRef< TemperatureDim, 'TP' >;
 
 export default ( {
@@ -8,6 +10,7 @@ export default ( {
   dim: [ 0, 0, 0, 0, 1, 0, 0 ],
   structure: [],
   conversion: {
+    base: kelvin,
     factor: 1.41678416e32,
     uncertainty: 1.1e-5
   },

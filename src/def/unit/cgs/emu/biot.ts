@@ -1,6 +1,8 @@
 import type { ElectricCurrentDim } from '../../../../types/dimension';
 import type { UnitDef, UnitRef } from '../../../../types/unit';
 
+import { ampere } from '../../si/base/ampere';
+
 export const biot = 'Bi' as UnitRef< ElectricCurrentDim, 'Bi' >;
 
 export default ( {
@@ -8,6 +10,7 @@ export default ( {
   dim: [ 0, 0, 0, 1, 0, 0, 0 ],
   structure: [],
   conversion: {
+    base: ampere,
     factor: 10
   },
   prefixable: false,

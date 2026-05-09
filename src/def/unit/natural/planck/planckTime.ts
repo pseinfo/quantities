@@ -1,6 +1,8 @@
 import type { TimeDim } from '../../../../types/dimension';
 import type { UnitDef, UnitRef } from '../../../../types/unit';
 
+import { second } from '../../si/base/second';
+
 export const planckTime = 'tP' as UnitRef< TimeDim, 'tP' >;
 
 export default ( {
@@ -8,6 +10,7 @@ export default ( {
   dim: [ 1, 0, 0, 0, 0, 0, 0 ],
   structure: [],
   conversion: {
+    base: second,
     factor: 5.39124760e-44,
     uncertainty: 1.1e-5
   },

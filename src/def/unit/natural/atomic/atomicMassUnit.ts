@@ -1,6 +1,8 @@
 import type { MassDim } from '../../../../types/dimension';
 import type { UnitDef, UnitRef } from '../../../../types/unit';
 
+import { gram } from '../../si/base/gram';
+
 export const atomicMassUnit = 'u' as UnitRef< MassDim, 'u' >;
 
 export default ( {
@@ -8,6 +10,7 @@ export default ( {
   dim: [ 0, 0, 1, 0, 0, 0, 0 ],
   structure: [],
   conversion: {
+    base: gram,
     factor: 1.6605390689252e-27
   },
   prefixable: false,

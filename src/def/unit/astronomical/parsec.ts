@@ -1,6 +1,8 @@
 import { LengthDim } from '../../../types/dimension';
 import type { UnitDef, UnitRef } from '../../../types/unit';
 
+import { meter } from '../si/base/meter';
+
 export const parsec = 'pc' as UnitRef< LengthDim, 'pc' >;
 
 export default ( {
@@ -8,6 +10,7 @@ export default ( {
   dim: [ 0, 1, 0, 0, 0, 0, 0 ],
   structure: [],
   conversion: {
+    base: meter,
     factor: 9.69394202136e16 / Math.PI
   },
   prefixable: true,

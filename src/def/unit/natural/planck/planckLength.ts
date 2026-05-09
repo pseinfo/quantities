@@ -1,6 +1,8 @@
 import type { LengthDim } from '../../../../types/dimension';
 import type { UnitDef, UnitRef } from '../../../../types/unit';
 
+import { meter } from '../../si/base/meter';
+
 export const planckLength = 'lP' as UnitRef< LengthDim, 'lP' >;
 
 export default ( {
@@ -8,6 +10,7 @@ export default ( {
   dim: [ 0, 1, 0, 0, 0, 0, 0 ],
   structure: [],
   conversion: {
+    base: meter,
     factor: 1.61625518e-35,
     uncertainty: 1.1e-5
   },

@@ -1,6 +1,8 @@
 import type { TemperatureDim } from '../../../../types/dimension';
 import type { UnitDef, UnitRef } from '../../../../types/unit';
 
+import { kelvin } from '../../si/base/kelvin';
+
 export const fahrenheit = 'degF' as UnitRef< TemperatureDim, 'degF' >;
 
 export default ( {
@@ -8,6 +10,7 @@ export default ( {
   dim: [ 0, 0, 0, 0, 1, 0, 0 ],
   structure: [],
   conversion: {
+    base: kelvin,
     scale: 5 / 9,
     offset: 255.3722222222222
   },

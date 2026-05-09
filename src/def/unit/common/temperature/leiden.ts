@@ -1,6 +1,8 @@
 import type { TemperatureDim } from '../../../../types/dimension';
 import type { UnitDef, UnitRef } from '../../../../types/unit';
 
+import { kelvin } from '../../si/base/kelvin';
+
 export const leiden = 'degL' as UnitRef< TemperatureDim, 'degL' >;
 
 export default ( {
@@ -8,6 +10,7 @@ export default ( {
   dim: [ 0, 0, 0, 0, 1, 0, 0 ],
   structure: [],
   conversion: {
+    base: kelvin,
     scale: 1,
     offset: 20.15
   },

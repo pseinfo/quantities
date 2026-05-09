@@ -1,6 +1,8 @@
 import { LengthDim } from '../../../types/dimension';
 import type { UnitDef, UnitRef } from '../../../types/unit';
 
+import { meter } from '../si/base/meter';
+
 export const lightYear = 'ly' as UnitRef< LengthDim, 'ly' >;
 
 export default ( {
@@ -8,6 +10,7 @@ export default ( {
   dim: [ 0, 1, 0, 0, 0, 0, 0 ],
   structure: [],
   conversion: {
+    base: meter,
     factor: 9.4607304725808e15
   },
   prefixable: false,

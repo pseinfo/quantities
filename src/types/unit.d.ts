@@ -27,8 +27,8 @@ export type UnitStruct = Array< {
 } >;
 
 export type UnitConv< D extends Dimension = Dimension > =
-  | { factor: number, uncertainty?: number, base?: UnitRef< D > }
-  | { scale: number, offset: number, uncertainty?: number, base?: UnitRef< D > }
+  | { base: UnitRef< D >, factor: number, uncertainty?: number }
+  | { base: UnitRef< D >, scale: number, offset: number, uncertainty?: number }
   | 1;
 
 export type UnitDef<

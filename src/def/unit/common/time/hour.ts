@@ -1,6 +1,8 @@
 import type { TimeDim } from '../../../../types/dimension';
 import type { UnitDef, UnitRef } from '../../../../types/unit';
 
+import { second } from '../../si/base/second';
+
 export const hour = 'hour' as UnitRef< TimeDim, 'hour' >;
 
 export default ( {
@@ -8,6 +10,7 @@ export default ( {
   dim: [ 1, 0, 0, 0, 0, 0, 0 ],
   structure: [],
   conversion: {
+    base: second,
     factor: 3600
   },
   prefixable: false,
