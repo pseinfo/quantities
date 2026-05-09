@@ -7,3 +7,8 @@ export type QuantityRef<
   readonly __brand: 'quantityRef';
   readonly __dim: D;
 };
+
+export type QuantityDef<
+  D extends Dimension = Dimension,
+  R extends QuantityRef< D > = QuantityRef< D >
+> = {};
