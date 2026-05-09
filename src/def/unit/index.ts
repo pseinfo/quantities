@@ -16,6 +16,11 @@ import { rankine } from './common/temperature/rankine';
 import { reaumur } from './common/temperature/reaumur';
 import { romer } from './common/temperature/romer';
 
+import { day } from './common/time/day';
+import { hour } from './common/time/hour';
+import { minute } from './common/time/minute';
+import { year } from './common/time/year';
+
 import { atomicMassUnit } from './natural/atomic/atomicMassUnit';
 
 import { planckLength } from './natural/planck/planckLength';
@@ -40,6 +45,7 @@ export default ( [
   statampere,
   // Common units
   celsius, delisle, fahrenheit, leiden, rankine, reaumur, romer,
+  day, hour, minute, year,
   // Natrural atomic units
   atomicMassUnit,
   // Natural Planck units
