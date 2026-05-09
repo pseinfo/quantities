@@ -5,7 +5,12 @@ import { lightYear } from './astronomical/lightYear';
 import { parsec } from './astronomical/parsec';
 
 import { biot } from './cgs/emu/biot';
+
 import { statampere } from './cgs/esu/statampere';
+
+import { degCelsius } from './common/temperature/degCelsius';
+import { degFahrenheit } from './common/temperature/degFahrenheit';
+import { degRankine } from './common/temperature/degRankine';
 
 import { atomicMassUnit } from './natural/atomic/atomicMassUnit';
 
@@ -29,6 +34,8 @@ export default ( [
   biot,
   // CGS ESU / Gaussian units
   statampere,
+  // Common units
+  degCelsius, degFahrenheit, degRankine,
   // Natrural atomic units
   atomicMassUnit,
   // Natural Planck units
