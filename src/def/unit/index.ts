@@ -10,6 +10,9 @@ import { biot } from './cgs/emu/biot';
 
 import { statampere } from './cgs/esu/statampere';
 
+import { radian } from './common/dimensionless/radian';
+import { steradian } from './common/dimensionless/steradian';
+
 import { celsius } from './common/temperature/celsius';
 import { delisle } from './common/temperature/delisle';
 import { fahrenheit } from './common/temperature/fahrenheit';
@@ -56,8 +59,11 @@ export default ( [
   biot,
   // CGS ESU / Gaussian units
   statampere,
-  // Common units
+  // Common dimensionless units
+  radian, steradian,
+  // Common temperature units
   celsius, delisle, fahrenheit, leiden, rankine, reaumur, romer,
+  // Common time units
   day, hour, minute, year,
   // Natrural atomic units
   atomicMassUnit,
