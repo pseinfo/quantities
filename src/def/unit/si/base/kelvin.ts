@@ -9,7 +9,7 @@ export default ( {
   structure: [],
   conversion: 1,
   prefixable: true,
-  aliases: [ 'kelvin' ],
+  aliases: [ 'kelvin', 'kelvins' ],
   context: {
     system: [ 'si' ],
     si: 'base',
@@ -25,7 +25,7 @@ export default ( {
       }
     } ],
     name: {
-      en: [ 'Kelvin' ],
+      en: [ 'kelvin', 'kelvins' ],
       de: [ 'Kelvin' ]
     },
     description: {
