@@ -21,9 +21,6 @@ export default ( {
     symbol: [ {
       id: 'pc',
       canonical: true,
-      context: {
-        system: [ 'astronomical' ]
-      },
       format: {
         plain: 'pc',
         latex: '\\mathrm{pc}'

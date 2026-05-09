@@ -21,18 +21,12 @@ export default ( {
     symbol: [ {
       id: 'au',
       canonical: true,
-      context: {
-        system: [ 'astronomical' ]
-      },
       format: {
         plain: 'au',
         latex: '\\mathrm{au}'
       }
     }, {
       id: 'AU',
-      context: {
-        system: [ 'astronomical' ]
-      },
       format: {
         plain: 'AU',
         latex: '\\mathrm{AU}'
@@ -40,7 +34,6 @@ export default ( {
     }, {
       id: 'AE',
       context: {
-        system: [ 'astronomical' ],
         lang: 'de'
       },
       format: {

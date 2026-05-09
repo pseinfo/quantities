@@ -20,18 +20,12 @@ export default ( {
     symbol: [ {
       id: 'Bi',
       canonical: true,
-      context: {
-        system: [ 'cgs', 'cgs_emu' ]
-      },
       format: {
         plain: 'Bi',
         latex: '\\mathrm{Bi}'
       }
     }, {
       id: 'abA',
-      context: {
-        system: [ 'cgs', 'cgs_emu' ]
-      },
       format: {
         plain: 'abA',
         latex: '\\mathrm{abA}'

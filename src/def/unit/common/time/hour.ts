@@ -21,18 +21,12 @@ export default ( {
     symbol: [ {
       id: 'h',
       canonical: true,
-      context: {
-        system: [ 'common', 'si' ]
-      },
       format: {
         plain: 'h',
         latex: '\\mathrm{h}'
       }
     }, {
       id: 'hr',
-      context: {
-        system: [ 'common', 'si' ]
-      },
       format: {
         plain: 'hr',
         latex: '\\mathrm{hr}'

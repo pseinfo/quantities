@@ -20,9 +20,6 @@ export default ( {
     symbol: [ {
       id: 'statA',
       canonical: true,
-      context: {
-        system: [ 'cgs', 'cgs_esu', 'cgs_gaussian' ]
-      },
       format: {
         plain: 'statA',
         latex: '\\mathrm{statA}'

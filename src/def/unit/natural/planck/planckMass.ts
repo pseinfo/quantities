@@ -20,9 +20,6 @@ export default ( {
     symbol: [ {
       id: 'mP',
       canonical: true,
-      context: {
-        system: [ 'natural', 'natural_planck' ]
-      },
       format: {
         plain: 'mP',
         unicode: 'mₚ',

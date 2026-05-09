@@ -19,18 +19,12 @@ export default ( {
     symbol: [ {
       id: 's',
       canonical: true,
-      context: {
-        system: [ 'si' ]
-      },
       format: {
         plain: 's',
         latex: '\\mathrm{s}'
       }
     }, {
       id: 'prime',
-      context: {
-        system: [ 'si' ]
-      },
       format: {
         plain: '\'\'',
         unicode: '″',

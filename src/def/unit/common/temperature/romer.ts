@@ -21,9 +21,6 @@ export default ( {
     symbol: [ {
       id: 'degRo',
       canonical: true,
-      context: {
-        system: [ 'common' ]
-      },
       format: {
         plain: '°Ro',
         unicode: '°Rø',

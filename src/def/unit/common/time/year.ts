@@ -21,9 +21,6 @@ export default ( {
     symbol: [ {
       id: 'a',
       canonical: true,
-      context: {
-        system: [ 'common', 'si', 'astronomical' ]
-      },
       format: {
         plain: 'a',
         latex: '\\mathrm{a}'

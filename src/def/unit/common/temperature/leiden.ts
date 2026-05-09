@@ -21,18 +21,12 @@ export default ( {
     symbol: [ {
       id: 'degL',
       canonical: true,
-      context: {
-        system: [ 'common' ]
-      },
       format: {
         plain: '°L',
         latex: '\\mathrm{^{\\circ}L}'
       }
     }, {
       id: 'DL',
-      context: {
-        system: [ 'common' ]
-      },
       format: {
         plain: 'DL',
         unicode: 'ÐL',

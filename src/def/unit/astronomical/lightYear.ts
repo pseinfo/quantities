@@ -21,18 +21,12 @@ export default ( {
     symbol: [ {
       id: 'ly',
       canonical: true,
-      context: {
-        system: [ 'astronomical' ]
-      },
       format: {
         plain: 'ly',
         latex: '\\mathrm{ly}'
       }
     }, {
       id: 'lyr',
-      context: {
-        system: [ 'astronomical' ]
-      },
       format: {
         plain: 'lyr',
         latex: '\\mathrm{lyr}'
@@ -40,7 +34,6 @@ export default ( {
     }, {
       id: 'Lj',
       context: {
-        system: [ 'astronomical' ],
         lang: 'de'
       },
       format: {

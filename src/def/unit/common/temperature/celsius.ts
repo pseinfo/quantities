@@ -22,9 +22,6 @@ export default ( {
     symbol: [ {
       id: 'degC',
       canonical: true,
-      context: {
-        system: [ 'common' ]
-      },
       format: {
         plain: '°C',
         unicode: '℃',

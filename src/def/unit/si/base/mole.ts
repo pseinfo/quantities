@@ -19,9 +19,6 @@ export default ( {
     symbol: [ {
       id: 'mol',
       canonical: true,
-      context: {
-        system: [ 'si' ]
-      },
       format: {
         plain: 'mol',
         latex: '\\mathrm{mol}'

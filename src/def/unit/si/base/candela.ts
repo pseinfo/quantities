@@ -19,9 +19,6 @@ export default ( {
     symbol: [ {
       id: 'cd',
       canonical: true,
-      context: {
-        system: [ 'si' ]
-      },
       format: {
         plain: 'cd',
         latex: '\\mathrm{cd}'

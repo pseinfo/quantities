@@ -21,9 +21,6 @@ export default ( {
     symbol: [ {
       id: 'tP',
       canonical: true,
-      context: {
-        system: [ 'natural', 'natural_planck' ]
-      },
       format: {
         plain: 'tP',
         unicode: 'tₚ',

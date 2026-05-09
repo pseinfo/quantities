@@ -21,18 +21,12 @@ export default ( {
     symbol: [ {
       id: 'u',
       canonical: true,
-      context: {
-        system: [ 'natural', 'natural_atomic' ]
-      },
       format: {
         plain: 'u',
         latex: '\\mathrm{u}'
       }
     }, {
       id: 'Da',
-      context: {
-        system: [ 'natural', 'natural_atomic' ]
-      },
       format: {
         plain: 'Da',
         latex: '\\mathrm{Da}'

@@ -19,9 +19,6 @@ export default ( {
     symbol: [ {
       id: 'm',
       canonical: true,
-      context: {
-        system: [ 'si' ]
-      },
       format: {
         plain: 'm',
         latex: '\\mathrm{m}'

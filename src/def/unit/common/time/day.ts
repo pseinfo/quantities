@@ -21,9 +21,6 @@ export default ( {
     symbol: [ {
       id: 'd',
       canonical: true,
-      context: {
-        system: [ 'common', 'si' ]
-      },
       format: {
         plain: 'd',
         latex: '\\mathrm{d}'

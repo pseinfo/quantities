@@ -21,9 +21,6 @@ export default ( {
     symbol: [ {
       id: 'degRa',
       canonical: true,
-      context: {
-        system: [ 'common', 'imperial', 'usc' ]
-      },
       format: {
         plain: '°Ra',
         latex: '\\mathrm{^{\\circ}Ra}'
@@ -31,9 +28,6 @@ export default ( {
     }, {
       id: 'degR',
       deprecated: true,
-      context: {
-        system: [ 'common', 'imperial', 'usc' ]
-      },
       format: {
         plain: '°R',
         latex: '\\mathrm{^{\\circ}R}'

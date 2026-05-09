@@ -21,18 +21,12 @@ export default ( {
     symbol: [ {
       id: 'min',
       canonical: true,
-      context: {
-        system: [ 'common', 'si' ]
-      },
       format: {
         plain: 'min',
         latex: '\\mathrm{min}'
       }
     }, {
       id: 'prime',
-      context: {
-        system: [ 'common', 'si' ]
-      },
       format: {
         plain: '\'',
         unicode: '′',

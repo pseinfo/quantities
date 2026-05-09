@@ -21,9 +21,6 @@ export default ( {
     symbol: [ {
       id: 'degDe',
       canonical: true,
-      context: {
-        system: [ 'common' ]
-      },
       format: {
         plain: '°De',
         latex: '\\mathrm{^{\\circ}De}'

@@ -21,9 +21,6 @@ export default ( {
     symbol: [ {
       id: 'degRe',
       canonical: true,
-      context: {
-        system: [ 'common' ]
-      },
       format: {
         plain: '°Re',
         unicode: '°Ré',
@@ -31,9 +28,6 @@ export default ( {
       }
     }, {
       id: 'degr',
-      context: {
-        system: [ 'common' ]
-      },
       format: {
         plain: '°r',
         latex: '\\mathrm{^{\\circ}r}'
