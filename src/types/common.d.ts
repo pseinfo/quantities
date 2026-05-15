@@ -23,7 +23,8 @@ export type Formula = {
 };
 
 export type Name = string | readonly [
-  singular: string, plural?: string
+  singular: string,
+  plural?: string
 ];
 
 export type Meta = {
