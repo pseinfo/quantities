@@ -1,5 +1,5 @@
 import type { UnitDef, UnitRef } from '../../../../types/def/unit';
-import { Format, Lang, UnitStatus, UnitSystem } from '../../../../types/dict';
+import { Format, Lang, UnitStatus, UnitSystem, UnitType } from '../../../../types/dict';
 import { ElectricCurrentDim } from '../../../../types/dimension';
 
 import { ampere } from '../../si/base/ampere';
@@ -7,6 +7,7 @@ import { ampere } from '../../si/base/ampere';
 export const biot = 'Bi' as UnitRef< ElectricCurrentDim, 'Bi' >;
 
 export default ( {
+  type: UnitType.NAMED,
   id: biot,
   dim: ElectricCurrentDim,
   structure: [],
@@ -39,7 +40,6 @@ export default ( {
       }
     }, {
       id: 'abA',
-      canonical: true,
       format: {
         [ Format.PLAIN ]: 'abA',
         [ Format.LATEX ]: '\\mathrm{abA}'
@@ -54,4 +54,4 @@ export default ( {
       [ Lang.DE ]: 'CGS-EMU-Einheit der elektrischen Stromstärke, gleich 10 Ampere.'
     }
   }
-} ) as const satisfies UnitDef< ElectricCurrentDim, typeof biot >;
+} ) as const satisfies UnitDef< ElectricCurrentDim, UnitType.NAMED, typeof biot >;

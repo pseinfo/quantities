@@ -34,7 +34,12 @@ export enum Branch {
   THERMODYNAMICS = 'thermodynamics'
 }
 
-export enum UnitSIType {
+export enum UnitType {
+  NAMED = 'named',
+  COMPOUND = 'compound'
+}
+
+export enum SIType {
   BASE = 'base',
   DERIVED = 'derived',
   ACCEPTED = 'accepted'

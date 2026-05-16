@@ -1,5 +1,5 @@
 import type { UnitDef, UnitRef } from '../../../types/def/unit';
-import { Format, Lang, UnitStatus, UnitSystem } from '../../../types/dict';
+import { Format, Lang, UnitStatus, UnitSystem, UnitType } from '../../../types/dict';
 import { ForceDim } from '../../../types/dimension';
 
 import { centi } from '../../prefix';
@@ -11,6 +11,7 @@ import { newton } from '../si/derived/newton';
 export const dyne = 'dyn' as UnitRef< ForceDim, 'dyn' >;
 
 export default ( {
+  type: UnitType.NAMED,
   id: dyne,
   dim: ForceDim,
   structure: [ {
@@ -56,8 +57,8 @@ export default ( {
       [ Lang.DE ]: [ 'Dyn' ]
     },
     description: {
-      [ Lang.EN ]: 'CGS unit of force, equal to 10 µN',
-      [ Lang.DE ]: 'CGS-Einheit der Kraft, gleich 10 µN'
+      [ Lang.EN ]: 'obsolete CGS unit of force, equal to 10 µN',
+      [ Lang.DE ]: 'veraltete CGS-Einheit der Kraft, gleich 10 µN'
     }
   }
-} ) as const satisfies UnitDef< ForceDim, typeof dyne >;
+} ) as const satisfies UnitDef< ForceDim, UnitType.NAMED, typeof dyne >;

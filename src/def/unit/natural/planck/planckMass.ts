@@ -1,5 +1,5 @@
 import type { UnitDef, UnitRef } from '../../../../types/def/unit';
-import { Format, Lang, UnitStatus, UnitSystem } from '../../../../types/dict';
+import { Format, Lang, UnitStatus, UnitSystem, UnitType } from '../../../../types/dict';
 import { MassDim } from '../../../../types/dimension';
 
 import { gram } from '../../si/base/gram';
@@ -7,6 +7,7 @@ import { gram } from '../../si/base/gram';
 export const planckMass = 'mP' as UnitRef< MassDim, 'mP' >;
 
 export default ( {
+  type: UnitType.NAMED,
   id: planckMass,
   dim: MassDim,
   structure: [],
@@ -50,8 +51,8 @@ export default ( {
       [ Lang.DE ]: [ 'Planck-Mass', 'Planck-Massen' ]
     },
     description: {
-      [ Lang.EN ]: 'Planck unit of mass in the system of natural units, mass at which quantum effects of gravity become significant',
-      [ Lang.DE ]: 'Planck-Einheit der Masse im System der natürlichen Einheiten, Masse, bei der Quanteneffekte der Gravitation signifikant werden'
+      [ Lang.EN ]: 'Planck unit of mass in the system of natural units; mass at which quantum effects of gravity become significant',
+      [ Lang.DE ]: 'Planck-Einheit der Masse im System der natürlichen Einheiten; Masse, bei der Quanteneffekte der Gravitation signifikant werden'
     }
   }
-} ) as const satisfies UnitDef< MassDim, typeof planckMass >;
+} ) as const satisfies UnitDef< MassDim, UnitType.NAMED, typeof planckMass >;

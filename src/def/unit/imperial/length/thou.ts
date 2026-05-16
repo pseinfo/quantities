@@ -1,5 +1,5 @@
 import type { UnitDef, UnitRef } from '../../../../types/def/unit';
-import { Format, Lang, UnitStatus, UnitSystem } from '../../../../types/dict';
+import { Format, Lang, UnitStatus, UnitSystem, UnitType } from '../../../../types/dict';
 import { LengthDim } from '../../../../types/dimension';
 
 import { meter } from '../../si/base/meter';
@@ -7,6 +7,7 @@ import { meter } from '../../si/base/meter';
 export const thou = 'thou' as UnitRef< LengthDim, 'thou' >;
 
 export default ( {
+  type: UnitType.NAMED,
   id: thou,
   dim: LengthDim,
   structure: [],
@@ -38,7 +39,6 @@ export default ( {
       }
     }, {
       id: 'mil',
-      canonical: true,
       format: {
         [ Format.PLAIN ]: 'mil',
         [ Format.LATEX ]: '\\mathrm{mil}'
@@ -53,4 +53,4 @@ export default ( {
       [ Lang.DE ]: 'imperiale Längeneinheit, die einem Tausendstel Zoll entspricht'
     }
   }
-} ) as const satisfies UnitDef< LengthDim, typeof thou >;
+} ) as const satisfies UnitDef< LengthDim, UnitType.NAMED, typeof thou >;
